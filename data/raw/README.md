@@ -1,0 +1,1 @@
+Directory where raw data will be downloaded to.

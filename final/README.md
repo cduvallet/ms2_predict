@@ -1,0 +1,1 @@
+Directory that contains final outputs, probably figures and maybe some tables.

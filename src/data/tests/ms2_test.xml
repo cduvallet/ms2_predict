@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+  <ms-ms>
+    <database-id>testid</database-id>
+    <energy-field nil="true"/>
+    <id>1</id>
+    <inchi-key>testinchikey</inchi-key>
+    <references>
+      <reference>
+        <database>HMDB</database>
+        <database-id>testid</database-id>
+        <ref-text nil="true"/>
+      </reference>
+    </references>
+    <ms-ms-peaks>
+      <ms-ms-peak>
+        <id>1</id>
+        <mass-charge>1.1</mass-charge>
+        <molecule-id nil="true"/>
+      </ms-ms-peak>
+      <ms-ms-peak>
+        <id>2</id>
+      </ms-ms-peak>
+    </ms-ms-peaks>
+  </ms-ms>
+
+
+  <ms-ms>
+    <id>2</id>
+    <inchi-key>testinchikey2</inchi-key>
+  </ms-ms>
+
+  <ms-ms>
+    <ionization-mode>Positive</ionization-mode>
+    <molecule-id>1</molecule-id>
+    <mono-mass nil="true"/>
+    <peak-counter>1610</peak-counter>
+    <solvent nil="true"/>
+    <spectra-assessment>Excellent</spectra-assessment>
+    <updated-at>2012-08-08T17:51:11Z</updated-at>
+    <references>
+      <reference>
+        <database>HMDB</database>
+        <database-id>HMDB00001</database-id>
+        <spectra-type>MsMs</spectra-type>
+      </reference>
+    </references>
+    <c-ms-peaks>
+      <c-ms-peak>
+        <id>579</id>
+        <intensity>3.4069997949</intensity>
+        <mass-charge>109.2</mass-charge>
+        <molecule-id nil="true"/>
+        <ms-ms-id>1</ms-ms-id>
+      </c-ms-peak>
+    </c-ms-peaks>
+  </ms-ms>
+
+
+  <ms-ms>
+    <chromatography-type>test</chromatography-type>
+    <peak-counter>2065</peak-counter>
+    <sample-assessment>Excellent</sample-assessment>
+    <references>
+      <reference>
+        <database>HMDB</database>
+      </reference>
+    </references>
+  </ms-ms>
+
+  </database>

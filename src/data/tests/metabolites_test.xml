@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hmdb xmlns="http://www.hmdb.ca">
+<metabolite>
+  <name>testname</name>
+  <accession>testaccession</accession>
+  <secondary_accessions>
+    <accession>testsecondaryaccession1</accession>
+    <accession>testsecondaryaccession2</accession>
+  </secondary_accessions>
+  <inchikey>testinchikey</inchikey>
+  <taxonomy>
+    <description>testdescription</description>
+    <kingdom>testkingdom</kingdom>
+    <super_class>testsuperclass</super_class>
+    <class>testclass</class>
+    <sub_class>testsubclass</sub_class>
+    <molecular_framework>testmolecularframwork</molecular_framework>
+    <substituents>
+      <substituent>testsubstituent</substituent>
+    </substituents>
+  </taxonomy>
+  <biofluid_locations>
+    <biofluid>testlocation1</biofluid>
+    <biofluid>testlocation2</biofluid>
+  </biofluid_locations>
+  <foodb_id>testfoodbid</foodb_id>
+  <knapsack_id>testknapsackid</knapsack_id>
+</metabolite>
+
+<metabolite>
+  <name>testname</name>
+  <accession>testaccession</accession>
+  <inchikey>testinchikey2</inchikey>
+</metabolite>
+</hmdb>

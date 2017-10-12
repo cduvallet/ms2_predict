@@ -273,7 +273,7 @@ def MS2Preprocessing(xml_file, feature_set, metabolite_dict):
 				failure = True
 				break
 			#filter out non-GC chromatagraphy data
-			if feature.tag == 'chromatography-type' and feature.text != 'GC':
+			if feature.tag == 'chromatography-type' and feature.text != 'LC':
 				failure = True
 				break
 
@@ -386,6 +386,8 @@ def writeToCSV(matched_dict, file_path):
 							peak_case = True
 					#just a regular list
 					if not peak_case:
+						# if attribute == 'biofluid_locations':
+							# import pdb; pdb.set_trace()
 						writestring = str(attribute) + '='
 						for list_item in value:
 							writestring += str(list_item) + ','
@@ -405,7 +407,8 @@ def writeToCSV(matched_dict, file_path):
 								writestring += '!'
 								writestring += str(ms_attribute) + '=' + str(ms_value)
 							writestring += ','
-				writestring_list.append(writestring)
+				writestring_list.append(writestring.replace('\xa0', ' '))
+			# import pdb; pdb.set_trace()
 			writer.writerow(writestring_list)
 	csv_file.close()
 
@@ -426,7 +429,7 @@ def unpackCSV(file_path):
 	for row in reader:
 		row_count += 1
 		#Row is for a Metabolite object
-		if row_count % 2 == 1:
+		if row[0]:
 			metabolite = Metabolite()
 			for cell in row:
 				#dictionary in cell
@@ -446,11 +449,15 @@ def unpackCSV(file_path):
 					cell_list = cell.split('=')[1]
 					split_list = cell_list.split(',')
 					setattr(metabolite, attribute, split_list)
-				#sole attribute, value pair in cell
+				#sole (attribute, value) pair in cell but not just cell w/ only inchikey
 				else:
-					attribute = cell.split('=')[0]
-					value = cell.split('=')[1]
-					setattr(metabolite, attribute, value)
+					if '=' not in cell:
+						setattr(metabolite, 'inchikey', cell)
+						setattr(metabolite, 'inchi_key', cell)
+					else:
+						attribute = cell.split('=')[0]
+						value = cell.split('=')[1]
+						setattr(metabolite, attribute, value)
 		#Row is for an MS2 object
 		else:
 			ms2_object = MS2()
@@ -467,21 +474,24 @@ def unpackCSV(file_path):
 						attribute_dictionary[key] = value
 					setattr(ms2_object, attribute, attribute_dictionary)
 				#ms_peak data in cell
-				elif 'ms_peak' in cell:
-					peak_list = cell.split('=')[1]
-					peak_attributes = peak_list.slit('!')
-					peak_object = MSPeak()
-					for peak_item in peak_items:
-						peak_attribute = peak_items.split('=')[0]
-						peak_value = peak_items.split('=')[1]
-						setattr(peak_object, peak_attribute, peak_value)
+				elif 'ms_peak' in cell and '!' in cell:
+					peak_list = cell.split('=')[1].split(',')
+					for peak in peak_list:
+						peak_attributes = peak_list.split('!')
+						peak_object = MSPeak()
+						for peak_item in peak_items:
+							peak_attribute = peak_items.split('=')[0]
+							peak_value = peak_items.split('=')[1]
+							setattr(peak_object, peak_attribute, peak_value)
 				#sole attribute data in cell
 				else:
 					peak_attribute = cell.split('=')[0]
 					peak_value = cell.split('=')[1]
-					setattr(peak_object, peak_attribute, peak_value)
+					setattr(ms2_object, peak_attribute, peak_value)
 			metabolite.MS2 = ms2_object
 			metabolite_dict[metabolite.inchikey] = metabolite
+
+	return metabolite_dict
 
 
 def testMetabolitePreprocessing(testingCSV=False):
@@ -532,8 +542,39 @@ def testMetabolitePreprocessing(testingCSV=False):
 	correct_metabolite_2.id_dict = dict()
 	correct_metabolite_dict[correct_metabolite_2.inchikey] = correct_metabolite_2
 
-	test_attributes = [attribute for attribute in dir(metabolite_dict['testinchikey']) if '__' not in attribute]
-	correct_attributes = [attribute for attribute in dir(correct_metabolite_dict['testinchikey']) if '__' not in attribute]
+	if testingCSV: return metabolite_dict
+	
+	result1 = compareMetabolites(correct_metabolite_dict['testinchikey'], metabolite_dict['testinchikey'])
+	result2 = compareMetabolites(correct_metabolite_dict['testinchikey2'], metabolite_dict['testinchikey2'])
+	return result1 and result2
+
+	# test_attributes = [attribute for attribute in dir(metabolite_dict['testinchikey']) if '__' not in attribute]
+	# correct_attributes = [attribute for attribute in dir(correct_metabolite_dict['testinchikey']) if '__' not in attribute]
+	# success = True
+	# try:
+	# 	assert set(test_attributes) == set(correct_attributes)
+	# except AssertionError:
+	# 	success = False
+	# 	print 'FAILURE. Generated set of attributes %s did not match the expected set: %s' % (test_attributes, correct_attributes)
+	# for attribute in test_attributes:
+	# 	try:
+	# 		assert getattr(metabolite_dict['testinchikey'], attribute) == getattr(correct_metabolite_dict['testinchikey'], attribute)
+	# 	except AssertionError:
+	# 		success = False 
+	# 		print 'FAILURE. Generated %s Value of %s did not match the expected %s' % (attribute, getattr(metabolite_dict['testinchikey'], attribute), getattr(correct_metabolite_dict['testinchikey'], attribute))
+
+	# 	try:
+	# 		assert getattr(metabolite_dict['testinchikey2'], attribute) == getattr(correct_metabolite_dict['testinchikey2'], attribute)
+	# 	except AssertionError:
+	# 		success = False
+	# 		print 'FAILURE. Generated %s Value of %s did not match the expected %s' % (attribute, getattr(metabolite_dict['testinchikey2'], attribute), getattr(correct_metabolite_dict['testinchikey2'], attribute))
+	# if testingCSV: return metabolite_dict
+	# return success
+
+
+def compareMetabolites(correct_metabolite, generated_metabolite):
+	test_attributes = [attribute for attribute in dir(generated_metabolite) if '__' not in attribute]
+	correct_attributes = [attribute for attribute in dir(correct_metabolite) if '__' not in attribute]
 	success = True
 	try:
 		assert set(test_attributes) == set(correct_attributes)
@@ -542,17 +583,22 @@ def testMetabolitePreprocessing(testingCSV=False):
 		print 'FAILURE. Generated set of attributes %s did not match the expected set: %s' % (test_attributes, correct_attributes)
 	for attribute in test_attributes:
 		try:
-			assert getattr(metabolite_dict['testinchikey'], attribute) == getattr(correct_metabolite_dict['testinchikey'], attribute)
+			if attribute != 'MS2':
+				assert getattr(correct_metabolite, attribute) == getattr(generated_metabolite, attribute)
 		except AssertionError:
 			success = False 
-			print 'FAILURE. Generated %s Value of %s did not match the expected %s' % (attribute, getattr(metabolite_dict['testinchikey'], attribute), getattr(correct_metabolite_dict['testinchikey'], attribute))
+			print 'FAILURE. Generated %s Value of %s did not match the expected %s' % (attribute, getattr(generated_metabolite, attribute), getattr(correct_metabolite, attribute))
 
+	if not correct_metabolite.MS2:
 		try:
-			assert getattr(metabolite_dict['testinchikey2'], attribute) == getattr(correct_metabolite_dict['testinchikey2'], attribute)
+			assert not generated_metabolite.MS2
 		except AssertionError:
 			success = False
-			print 'FAILURE. Generated %s Value of %s did not match the expected %s' % (attribute, getattr(metabolite_dict['testinchikey2'], attribute), getattr(correct_metabolite_dict['testinchikey2'], attribute))
-	if testingCSV: return metabolite_dict
+			print "Failure. Unexpected MS2 object found"
+	else:
+		if compareMS2(correct_metabolite.MS2, generated_metabolite.MS2):
+			success = False
+			print "Failure. MS2s were not equal"
 	return success
 
 
@@ -687,7 +733,7 @@ def testMS2Preprocessing():
 					print 'Failure. Generated %s value of %s did not matched the expected: %s' % (attribute, generated_value, correct_value)
 	return success
 
-def testWriteToCSV():
+def testWriteToCSV(testingUnpack=False):
 	'''
 	Tests writeToCSV()
 
@@ -718,6 +764,8 @@ def testWriteToCSV():
 	for key in metabolite_dict.iterkeys():
 		metabolite_dict[key].MS2 = ms2_object
 
+	if testingUnpack: return metabolite_dict
+
 	file_path = os.getcwd() + '/tests/test.csv'
 	writeToCSV(metabolite_dict, file_path)
 
@@ -741,8 +789,34 @@ def testWriteToCSV():
 	return True
 
 
+def testUnpackCSV():
+	'''
+	Tests unpackCSV()
+
+	'''
+
+	correct_dict = testWriteToCSV(True)
+	testWriteToCSV(False)
+	csv_path = os.getcwd() + '/tests/test.csv'
+	generated_dict = unpackCSV(csv_path)
+
+	success = True
+	if set(correct_dict.keys()) != set(generated_dict.keys()):
+		print 'key mismatch'
+		return False
+
+	for key in correct_dict.iterkeys():
+		correct_metabolite = correct_dict[key]
+		generated_metabolite = generated_dict[key]
+		if not compareMetabolites(correct_metabolite, generated_metabolite):
+			return False
+	return True
+
+
+
 def testAll():
 	'''
+	10:30
 	Tests metabolitePreprocessing(), MS2Preprocessing(), writeToCSV(), and unpackCSV()
 	with minimal, yet exhaustive test cases.
 
@@ -751,38 +825,50 @@ def testAll():
 
 	'''
 	success = []
-	success += testMetabolitePreprocessing()
-	success += testMS2Preprocessing()
-	success += testWriteToCSV()
-	success += testUnpackCSV()
+	success.append(testMetabolitePreprocessing())
+	success.append(testMS2Preprocessing())
+	success.append(testWriteToCSV())
+	success.append(testUnpackCSV())
 	assert all(success)
 
 
 
 
+
 if __name__ == '__main__':
-	ms2_feature_set = set(['inchi_key','frequency','instrument_type','id','energy_field','chemical_shift_reference','base_peak','sample_mass_units','chromatography_type','searchable','sample_mass','derivative_mw','retention_time','updated_at','sample_assessment','derivative_formula','derivative_type','database_id','ref_text','mass_charge','collision_energy_voltage','sample_concentration','chemical_shift_x','spectra_assessment','solvent','chemical_shift','nucleus_y','ionization_mode','collection_date','nucleus','sample_temperature_units','sample_ph','spectra_id','c_ms_id','sample_concentration_units','sample_source','nil_classes','nucleus_x','database','notes','created_at','sample_temperature','ri_type','pubmed_id','molecule_id','column_type','retention_index','collision_energy_level','references','name','accession','chemical_formula','monoisotopic_molecular_weight','iupac_name','traditional_iupac','cas_registry','smiles','inchi','inchikey','taxonomy','biofluid_locations','ids','peak_counter', 'chemical_shift_y', 'mono_mass', 'ms_ms_id', 'spectra_type'])
+	# ms2_feature_set = set(['inchi_key','frequency','instrument_type','id','energy_field','chemical_shift_reference','base_peak','sample_mass_units','chromatography_type','searchable','sample_mass','derivative_mw','retention_time','updated_at','sample_assessment','derivative_formula','derivative_type','database_id','ref_text','mass_charge','collision_energy_voltage','sample_concentration','chemical_shift_x','spectra_assessment','solvent','chemical_shift','nucleus_y','ionization_mode','collection_date','nucleus','sample_temperature_units','sample_ph','spectra_id','c_ms_id','sample_concentration_units','sample_source','nil_classes','nucleus_x','database','notes','created_at','sample_temperature','ri_type','pubmed_id','molecule_id','column_type','retention_index','collision_energy_level','references','name','accession','chemical_formula','monoisotopic_molecular_weight','iupac_name','traditional_iupac','cas_registry','smiles','inchi','inchikey','taxonomy','biofluid_locations','ids','peak_counter', 'chemical_shift_y', 'mono_mass', 'ms_ms_id', 'spectra_type'])
 
-	ms2_xml_file = '/Users/julianalverio/Documents/CURRENT/6.867/metabolomics/hmdb_spectra_xml/combined_file_clean.xml'
-	metabolite_xml_file = '/Users/julianalverio/Documents/CURRENT/6.867/metabolomics/hmdb_metabolites.xml'
-	metabolite_feature_set = set(['accession', 'secondary_accessions', 'name', 
-							   'chemical_formula', 
-							   'monisotopic_molecular_weight', 'iupac_name', 
-							   'traditional_iupac', 'cas_registry_number',
-							   'smiles', 'inchi', 'inchikey',
-							   'biofluid_locations', 'taxonomy'])
+	# ms2_xml_file = '/Users/julianalverio/Documents/CURRENT/6.867/metabolomics/hmdb_spectra_xml/combined_file_clean.xml'
+	# metabolite_xml_file = '/Users/julianalverio/Documents/CURRENT/6.867/metabolomics/hmdb_metabolites.xml'
+	# metabolite_feature_set = set(['accession', 'secondary_accessions', 'name', 
+	# 						   'chemical_formula', 
+	# 						   'monisotopic_molecular_weight', 'iupac_name', 
+	# 						   'traditional_iupac', 'cas_registry_number',
+	# 						   'smiles', 'inchi', 'inchikey',
+	# 						   'biofluid_locations', 'taxonomy'])
 
-	metabolite_dict = metabolitePreprocessing(metabolite_xml_file, metabolite_feature_set)
+	# metabolite_dict = metabolitePreprocessing(metabolite_xml_file, metabolite_feature_set)
 
-	matched_dict, failure_list = MS2Preprocessing(ms2_xml_file, ms2_feature_set, metabolite_dict)
+	# matched_dict, failure_list = MS2Preprocessing(ms2_xml_file, ms2_feature_set, metabolite_dict)
 
 
-	file_path = os.cwd() + '/aggregated_metabolites.csv'
-	writeToCSV(matched_dict, file_path)
+	# file_path = os.getcwd() + '/aggregated_metabolites.csv'
+	# writeToCSV(matched_dict, file_path)
+
+	testAll()
 
 
 
 '''
+TODO
+Run this on real data
+Test unpack CSV
+Update failure list definition and verify things match up well
+Answer open questions
+Scrape and preprocess data from MassBank
+Think about ways to represent our data as a matrix, possibly code it up
+Look at classifiers for our data
+
 
 Types of peaks:
 'c-ms-peak', 'nmr-one-d-peak', 'c-ms-peaks', 'nmr-one-d-peaks', 'ms-ms-peaks', 'nmr-two-d-peaks', 'ei-ms-peak', 'nmr-two-d-peak'

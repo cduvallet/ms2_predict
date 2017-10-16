@@ -8,7 +8,6 @@ sys.path.append('/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7
 from unidecode import unidecode
 
 
-
 '''
 A container for all MS2 metadata. Final MS2 objects may have empty or additional
 fields, depending on any anomalies in the data.
@@ -78,7 +77,6 @@ class MS2:
 		self.id_dict = None
 		self.peaks = None
 
-
 	def __str__(self):
 		return 'MS2'
 
@@ -93,7 +91,6 @@ class MSPeak:
 		self.ms_ms_id = None
 		self.intensity = None
 		self.mass_charge = None
-
 
 	def __str__(self):
 		return 'MSPeak'
@@ -120,7 +117,6 @@ class Metabolite:
 		self.id_dict = None
 		self.taxonomy_dict = None
 		self.MS2 = []
-
 
 	def __str__(self):
 		return 'Metabolite'
@@ -322,19 +318,15 @@ def MS2Preprocessing(xml_file, feature_set, metabolite_dict):
 		
     ms2_object.id_dict = id_dict
     #check for failure i.e. this data should be ignored
-    print '\a'
-    import pdb; pdb.set_trace()
-    if failure: break
+    if failure: continue
     #add MS2 feature to metabolite dictionary
     if metabolite_dict.get(ms2_object.inchi_key):
-      # import pdb; pdb.set_trace()
       metabolite_dict[ms2_object.inchi_key].MS2.append(ms2_object)
     else:
-      # import pdb; pdb.set_trace()
       failure_list.append(ms2_object)
 		
   print 'Done.'
-  print len(failure_list)
+  print 'Found', len(failure_list), 'MS2 objects without Metabolite pairs'
   return metabolite_dict, failure_list
 
 
@@ -353,171 +345,174 @@ def writeToCSV(matched_dict, file_path):
       MS2Preprocessing().
     file_path: path to which the csv file will be written
   '''
-  try:
-    print 'Writing to CSV...'
-    csv_file = open(file_path, 'w+')
-    writer = csv.writer(csv_file)
-    #for each (inchi_key, Metabolite) pair
-    for metabolite_item in matched_dict.iteritems():
-      metabolite = metabolite_item[1]
-      ms2_object = getattr(metabolite, 'MS2')
-      #look at both the Metabolite object and MS2 object
-      for metabolite_object in [metabolite, ms2_object]:
-        if not metabolite_object:
-          continue
-        attributes = dir(metabolite_object)
-        attributes = [attribute for attribute in attributes if '__' not in attribute]
-        try:
-          attributes.remove('MS2')
-        except:
-          pass
-        #Start line with empty cell if MS2 or inchi_key if metabolite
-        if str(metabolite_object) == 'MS2':
-          writestring_list = ['']
-        else:
-          writestring_list = [metabolite_item[0]]
-        #Object attributes
-        for attribute in attributes:
-          value = getattr(metabolite_object, attribute)
-          #if object.attribute = 'value' format
-          if type(value) in [type(''), type(None)]:
-            if value:
-              writestring = str(attribute) + '=' + value.replace('\xa0', ' ')
+  print 'Writing to CSV...'
+  csv_file = open(file_path, 'w+')
+  writer = csv.writer(csv_file)
+  #for each (inchi_key, Metabolite) pair
+  for metabolite in matched_dict.itervalues():
+    attributes = dir(metabolite)
+    attributes = [attribute for attribute in attributes if '__' not in attribute and 'MS2' not in attribute]
+    writestring_list = [metabolite.inchikey]
+    for attribute in attributes:
+      value = getattr(metabolite, attribute)
+      writestring = str(attribute) + '='
+      if not value:
+        pass
+      elif type(value) == str:
+        writestring += value
+      elif type(value) == dict:
+        for item in value.iteritems():
+          writestring += item[0] + ':'
+          if item[1]:
+            if type(item[1]) == unicode:
+              writestring += unidecode(item[1]) + ','
             else:
-              writestring = str(attribute) + '='
-
-          #if object.attribute = {key:value} format
-          elif type(value) == dict:
-            writestring = str(attribute) + '='
-            for item in value.iteritems():
-              writestring += item[0].replace('\xa0', ' ') + ':'
-              if item[1]:
-                if type(item[1]) == unicode:
-                  writestring += unidecode(item[1]) + ','
-                else:
-                  writestring += item[1] + ','
+              writestring += item[1] + ','
+          else:
+            writestring += ','
+        writestring = writestring[:-1]
+      elif type(value) == list:
+        for list_item in value:
+          writestring += list_item + ','
+        writestring = writestring[:-1]
+      writestring_list.append(writestring)
+    writer.writerow(writestring_list)
+    ms2_object_list = metabolite.MS2
+    for ms2_object in ms2_object_list:
+      attributes = dir(ms2_object)
+      attributes = [attribute for attribute in attributes if '__' not in attribute]
+      writestring_list = ['']
+      for attribute in attributes:
+        value = getattr(ms2_object, attribute)
+        writestring = str(attribute) + '='
+        if not value:
+          pass
+        elif type(value) == str:
+          writestring += value
+        elif type(value) == dict:
+          for item in value.iteritems():
+            writestring += item[0] + ':'
+            if item[1]:
+              if type(item[1]) == unicode:
+                writestring ++ unidecode(item[1]) + ','
               else:
-                writestring += ' '
+                writestring += item[1] + ','
+            else:
+              writestring += ','
+          writestring = writestring[:-1]
+        elif type(value) == list:
+          if str(value[0]) != 'MSPeak':
+            for list_item in value:
+              writestring += list_item + ','
+            writestring = writestring[:-1]
+          else:
+            ms2_attributes = [attribute for attribute in dir(value[0]) if '__' not in attribute]
+            for peak in value:
+              for ms_attribute in ms2_attributes:
+                try:
+                  ms_value = getattr(peak, ms_attribute)
+                  if not ms_value:
+                    ms_value = ''
+                except AttributeError:
+                  ms_value = ''
+                writestring += '!'
+                writestring += str(ms_attribute) + '=' + str(ms_value)
+            writestring += ','
             writestring = writestring[:-1]
 
-          #if object.attribute = [value1, value2, ..., valueN] format
-          elif type(value) == list:
-            peak_case = False
-            #is it a list of MSPeak objects?
-            if value:
-              if value[0].replace('\xa0', ' ') == 'MSPeak':
-                peak_case = True
-            #just a regular list
-            if not peak_case:
-              writestring = attribute + '='
-              for list_item in value:
-                writestring += list_item.replace('\xa0', '') + ','
-              if value:
-                writestring = writestring[:-1]
-            #list of MSPeak objects
-            if peak_case:
-              writestring = 'MS2='
-              ms2_attributes = [attribute for attribute in dir(value[0]) if '__' not in attribute]
-              for peak in value:
-                for ms_attribute in ms2_attributes:
-                  try:
-                    ms_value = getattr(peak, ms_attribute)
-                    if not ms_value:
-                      ms_value = ' '
-                  except AttributeError:
-                    ms_value = ' '
-                  writestring += '!'
-                  writestring += str(ms_attribute) + '=' + str(ms_value)
-              writestring += ','
-          writestring_list.append(writestring.replace('\xa0', ' '))
-        writer.writerow(writestring_list)
-    csv_file.close()
-  except:
-    import pdb; pdb.set_trace()
+        writestring_list.append(writestring)
+      writer.writerow(writestring_list)
+  csv_file.close()
 
 
 def unpackCSV(file_path):
-	'''
-	Reads from csv, generates {inchikey:Metabolite} dictionary w/populated MS2
+  '''
+  Reads from csv, generates {inchikey:Metabolite} dictionary w/populated MS2
 
-	Args:
-		file_path: path to csv file to read
-	Returns:
-		{inchikey:Metabolite} dictionary
-	'''
-	csv_file = open(file_path, 'r')
-	reader = csv.reader(csv_file)
-	row_count = 0
-	metabolite_dict = dict()
-	for row in reader:
-		row_count += 1
-		#Row is for a Metabolite object
-		if row[0]:
-			metabolite = Metabolite()
-			for cell in row:
-				#dictionary in cell
-				if ':' in cell:
-					attribute_dictionary = dict()
-					attribute = cell.split('=')[0]
-					dictionary = cell.split('=')[1]
-					split_dictionary = dictionary.split(',')
-					for item in split_dictionary:
-						key = item.split(':')[0]
-						value = item.split(':')[1]
-						attribute_dictionary[key] = value
-					setattr(metabolite, attribute, attribute_dictionary)
-				#list in cell
-				elif ',' in cell:
-					attribute = cell.split('=')[0]
-					cell_list = cell.split('=')[1]
-					split_list = cell_list.split(',')
-					setattr(metabolite, attribute, split_list)
-				#sole (attribute, value) pair in cell but not just cell w/ only inchikey
-				else:
-					if '=' not in cell:
-						setattr(metabolite, 'inchikey', cell)
-						setattr(metabolite, 'inchi_key', cell)
-					else:
-						attribute = cell.split('=')[0]
-						value = cell.split('=')[1]
-						if value:
-							setattr(metabolite, attribute, value)
-						else:
-							setattr(metabolite, attribute, None)
-		#Row is for an MS2 object
-		else:
-			ms2_object = MS2()
-			for cell in row[1:]:
-				#dictionary in cell:
-				if ':' in cell:
-					attribute_dictionary = dict()
-					attribute = cell.split('=')[0]
-					dictionary = cell.split('=')[1]
-					split_dictionary = dictionary.split(',')
-					for item in split_dictionary:
-						key = item.split(':')[0]
-						value = item.split(':')[1]
-						attribute_dictionary[key] = value
-					setattr(ms2_object, attribute, attribute_dictionary)
-				#ms_peak data in cell
-				elif 'ms_peak' in cell and '!' in cell:
-					peak_list = cell.split('=')[1].split(',')
-					for peak in peak_list:
-						peak_attributes = peak_list.split('!')
-						peak_object = MSPeak()
-						for peak_item in peak_items:
-							peak_attribute = peak_items.split('=')[0]
-							peak_value = peak_items.split('=')[1]
-							setattr(peak_object, peak_attribute, peak_value)
-				#sole attribute data in cell
-				else:
-					peak_attribute = cell.split('=')[0]
-					peak_value = cell.split('=')[1]
-					setattr(ms2_object, peak_attribute, peak_value)
-			metabolite.MS2 = ms2_object
-			metabolite_dict[metabolite.inchikey] = metabolite
+  Args:
+    file_path: path to csv file to read
+  Returns:
+    {inchikey:Metabolite} dictionary
+  '''
+  csv_file = open(file_path, 'r')
+  reader = csv.reader(csv_file)
+  row_count = 0
+  metabolite_dict = dict()
+  for row in reader:
+    row_count += 1
+    #Row is for a Metabolite object
+    if row[0]:
+      metabolite = Metabolite()
+      for cell in row:
+        #dictionary in cell
+        if ':' in cell:
+          attribute_dictionary = dict()
+          attribute = cell.split('=')[0]
+          dictionary = cell.split('=')[1]
+          split_dictionary = dictionary.split(',')
+          for item in split_dictionary:
+            key = item.split(':')[0]
+            if len(item.split(':')) == 2:
+              value = item.split(':')[1]
+            else:
+              value = None
+            attribute_dictionary[key] = value
+          setattr(metabolite, attribute, attribute_dictionary)
+        #list in cell
+        elif ',' in cell:
+          attribute = cell.split('=')[0]
+          cell_list = cell.split('=')[1]
+          split_list = cell_list.split(',')
+          setattr(metabolite, attribute, split_list)
+        #sole (attribute, value) pair in cell but not just cell w/ only inchikey
+        else:
+          if '=' not in cell:
+            setattr(metabolite, 'inchikey', cell)
+            setattr(metabolite, 'inchi_key', cell)
+          else:
+            attribute = cell.split('=')[0]
+            value = cell.split('=')[1]
+            if value:
+              setattr(metabolite, attribute, value)
+            else:
+              setattr(metabolite, attribute, None)
+    #Row is for an MS2 object
+    else:
+      ms2_object = MS2()
+      for cell in row[1:]:
+        #dictionary in cell:
+        if ':' in cell:
+          attribute_dictionary = dict()
+          attribute = cell.split('=')[0]
+          dictionary = cell.split('=')[1]
+          split_dictionary = dictionary.split(',')
+          for item in split_dictionary:
+            key = item.split(':')[0]
+            if len(item.split(':')) == 2:
+              value = item.split(':')[1]
+            else:
+              value = None
+            attribute_dictionary[key] = value
+          setattr(ms2_object, attribute, attribute_dictionary)
+        #ms_peak data in cell
+        elif 'ms_peak' in cell and '!' in cell:
+          peak_list = cell.split('=')[1].split(',')
+          for peak in peak_list:
+            peak_attributes = peak_list.split('!')
+            peak_object = MSPeak()
+            for peak_item in peak_items:
+              peak_attribute = peak_items.split('=')[0]
+              peak_value = peak_items.split('=')[1]
+              setattr(peak_object, peak_attribute, peak_value)
+        #sole attribute data in cell
+        else:
+          peak_attribute = cell.split('=')[0]
+          peak_value = cell.split('=')[1]
+          setattr(ms2_object, peak_attribute, peak_value)
+      metabolite.MS2 = ms2_object
+    metabolite_dict[metabolite.inchikey] = metabolite
 
-	return metabolite_dict
+  return metabolite_dict
 
 
 def testMetabolitePreprocessing(testingCSV=False):
@@ -780,7 +775,7 @@ def testWriteToCSV(testingUnpack=False):
 
 	metabolite_dict = testMetabolitePreprocessing(True)
 	for key in metabolite_dict.iterkeys():
-		metabolite_dict[key].MS2 = ms2_object
+		metabolite_dict[key].MS2 = [ms2_object]
 
 	if testingUnpack: return metabolite_dict
 
@@ -831,44 +826,49 @@ def testUnpackCSV():
 
 
 def testAll():
-	'''
-	Tests metabolitePreprocessing(), MS2Preprocessing(), writeToCSV(), and unpackCSV()
-	with minimal, yet exhaustive test cases.
+  '''
+  Tests metabolitePreprocessing(), MS2Preprocessing(), writeToCSV(), and unpackCSV()
+  with minimal, yet exhaustive test cases.
 
-	Raises:
-		AssertionError if not all test cases pass
+  Raises:
+    AssertionError if not all test cases pass
 
-	'''
-	success = []
-	success.append(testMetabolitePreprocessing())
-	success.append(testMS2Preprocessing())
-	success.append(testWriteToCSV())
-	success.append(testUnpackCSV())
-	assert all(success)
+  '''
+  success = []
+  success.append(testMetabolitePreprocessing())
+  success.append(testMS2Preprocessing())
+  success.append(testWriteToCSV())
+  success.append(testUnpackCSV())
+  assert all(success)
 
 
 if __name__ == '__main__':
-  ms2_feature_set = set(['inchi_key','frequency','instrument_type','id','energy_field','base_peak','sample_mass_units','chromatography_type','searchable','sample_mass','derivative_mw','retention_time','updated_at','sample_assessment','derivative_formula','derivative_type','database_id','ref_text','mass_charge','collision_energy_voltage','sample_concentration','spectra_assessment','solvent','nucleus_y','ionization_mode','collection_date','nucleus','sample_temperature_units','sample_ph','spectra_id','c_ms_id','sample_concentration_units','sample_source','nil_classes','nucleus_x','database','notes','created_at','sample_temperature','ri_type','pubmed_id','molecule_id','column_type','retention_index','collision_energy_level','references','name','accession','chemical_formula','monoisotopic_molecular_weight','iupac_name','traditional_iupac','cas_registry','smiles','inchi','inchikey','taxonomy','biofluid_locations','ids','peak_counter', 'mono_mass', 'ms_ms_id', 'spectra_type'])
-  ms2_xml_file = os.getcwd() + '/hmdb_spectra_xml/combined_file_clean.xml'
-  metabolite_xml_file = os.getcwd() + '/hmdb_metabolites.xml'
-  metabolite_feature_set = set(['accession', 'secondary_accessions', 'name', 
-                'chemical_formula', 
-                'monisotopic_molecular_weight', 'iupac_name', 
-                'traditional_iupac', 'cas_registry_number',
-                'smiles', 'inchi', 'inchikey',
-                'biofluid_locations', 'taxonomy'])
+  # ms2_feature_set = set(['inchi_key','frequency','instrument_type','id','energy_field','base_peak','sample_mass_units','chromatography_type','searchable','sample_mass','derivative_mw','retention_time','updated_at','sample_assessment','derivative_formula','derivative_type','database_id','ref_text','mass_charge','collision_energy_voltage','sample_concentration','spectra_assessment','solvent','nucleus_y','ionization_mode','collection_date','nucleus','sample_temperature_units','sample_ph','spectra_id','c_ms_id','sample_concentration_units','sample_source','nil_classes','nucleus_x','database','notes','created_at','sample_temperature','ri_type','pubmed_id','molecule_id','column_type','retention_index','collision_energy_level','references','name','accession','chemical_formula','monoisotopic_molecular_weight','iupac_name','traditional_iupac','cas_registry','smiles','inchi','inchikey','taxonomy','biofluid_locations','ids','peak_counter', 'mono_mass', 'ms_ms_id', 'spectra_type'])
+  # ms2_xml_file = os.getcwd() + '/hmdb_spectra_xml/combined_file_clean.xml'
+  # metabolite_xml_file = os.getcwd() + '/hmdb_metabolites.xml'
+  # metabolite_feature_set = set(['accession', 'secondary_accessions', 'name', 
+  #               'chemical_formula', 
+  #               'monisotopic_molecular_weight', 'iupac_name', 
+  #               'traditional_iupac', 'cas_registry_number',
+  #               'smiles', 'inchi', 'inchikey',
+  #               'biofluid_locations', 'taxonomy'])
 
-  metabolite_dict = metabolitePreprocessing(metabolite_xml_file, metabolite_feature_set)
-  matched_dict, failure_list = MS2Preprocessing(ms2_xml_file, ms2_feature_set, metabolite_dict)
+  # metabolite_dict = metabolitePreprocessing(metabolite_xml_file, metabolite_feature_set)
+  # matched_dict, failure_list = MS2Preprocessing(ms2_xml_file, ms2_feature_set, metabolite_dict)
 
-  csv_file_path = os.getcwd() + '/aggregated_metabolites.csv'
-  writeToCSV(matched_dict, csv_file_path)
-  for elt in xrange(10):
-    print '\a'
-  print 'Done!'
+  # csv_file_path = os.getcwd() + '/aggregated_metabolites.csv'
+  # writeToCSV(matched_dict, csv_file_path)
+
+  file_path = os.getcwd() + '/aggregated_metabolites.csv'
+  m = unpackCSV(file_path)
+  print '\a'
+  import pdb; pdb.set_trace()
 
 
 '''
+74234 Metabolites
+865 with MS2 objects
+
 Open Questions:
 -To use HMDB key or InChi key?
 -How many molecules in HMDB (with metadata)

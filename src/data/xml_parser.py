@@ -348,7 +348,7 @@ def writeToCSV(matched_dict, file_path):
   print 'Writing to CSV...'
   csv_file = open(file_path, 'w+')
   writer = csv.writer(csv_file)
-  #for each (inchi_key, Metabolite) pair
+  #for each metabolite
   for metabolite in matched_dict.itervalues():
     attributes = dir(metabolite)
     attributes = [attribute for attribute in attributes if '__' not in attribute and 'MS2' not in attribute]
@@ -356,10 +356,13 @@ def writeToCSV(matched_dict, file_path):
     for attribute in attributes:
       value = getattr(metabolite, attribute)
       writestring = str(attribute) + '='
+      #if empty field
       if not value:
         pass
+      #if field=value format
       elif type(value) == str:
         writestring += value
+      #if field={key:value, ...} format
       elif type(value) == dict:
         for item in value.iteritems():
           writestring += item[0] + ':'
@@ -371,13 +374,16 @@ def writeToCSV(matched_dict, file_path):
           else:
             writestring += ','
         writestring = writestring[:-1]
+      #if field=[value, value, ...] format
       elif type(value) == list:
         for list_item in value:
           writestring += list_item + ','
         writestring = writestring[:-1]
       writestring_list.append(writestring)
     writer.writerow(writestring_list)
+
     ms2_object_list = metabolite.MS2
+    #for MS2 object
     for ms2_object in ms2_object_list:
       attributes = dir(ms2_object)
       attributes = [attribute for attribute in attributes if '__' not in attribute]
@@ -385,10 +391,13 @@ def writeToCSV(matched_dict, file_path):
       for attribute in attributes:
         value = getattr(ms2_object, attribute)
         writestring = str(attribute) + '='
+        #if empty field
         if not value:
           pass
+        #if field=value format
         elif type(value) == str:
           writestring += value
+        #if field={key:value, ...} format
         elif type(value) == dict:
           for item in value.iteritems():
             writestring += item[0] + ':'
@@ -400,6 +409,7 @@ def writeToCSV(matched_dict, file_path):
             else:
               writestring += ','
           writestring = writestring[:-1]
+        #if field=[value, value, ...] format
         elif type(value) == list:
           if str(value[0]) != 'MSPeak':
             for list_item in value:

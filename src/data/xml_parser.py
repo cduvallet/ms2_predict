@@ -3,8 +3,8 @@ import numpy as np
 import csv
 import os
 
-import sys
-sys.path.append('/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages')
+# import sys
+# sys.path.append('/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages')
 from unidecode import unidecode
 
 
@@ -843,26 +843,26 @@ def testAll():
 
 
 if __name__ == '__main__':
-  # ms2_feature_set = set(['inchi_key','frequency','instrument_type','id','energy_field','base_peak','sample_mass_units','chromatography_type','searchable','sample_mass','derivative_mw','retention_time','updated_at','sample_assessment','derivative_formula','derivative_type','database_id','ref_text','mass_charge','collision_energy_voltage','sample_concentration','spectra_assessment','solvent','nucleus_y','ionization_mode','collection_date','nucleus','sample_temperature_units','sample_ph','spectra_id','c_ms_id','sample_concentration_units','sample_source','nil_classes','nucleus_x','database','notes','created_at','sample_temperature','ri_type','pubmed_id','molecule_id','column_type','retention_index','collision_energy_level','references','name','accession','chemical_formula','monoisotopic_molecular_weight','iupac_name','traditional_iupac','cas_registry','smiles','inchi','inchikey','taxonomy','biofluid_locations','ids','peak_counter', 'mono_mass', 'ms_ms_id', 'spectra_type'])
-  # ms2_xml_file = os.getcwd() + '/hmdb_spectra_xml/combined_file_clean.xml'
-  # metabolite_xml_file = os.getcwd() + '/hmdb_metabolites.xml'
-  # metabolite_feature_set = set(['accession', 'secondary_accessions', 'name', 
-  #               'chemical_formula', 
-  #               'monisotopic_molecular_weight', 'iupac_name', 
-  #               'traditional_iupac', 'cas_registry_number',
-  #               'smiles', 'inchi', 'inchikey',
-  #               'biofluid_locations', 'taxonomy'])
+  #######    TO GENERATE CSV    #######
+  ms2_feature_set = set(['inchi_key','frequency','instrument_type','id','energy_field','base_peak','sample_mass_units','chromatography_type','searchable','sample_mass','derivative_mw','retention_time','updated_at','sample_assessment','derivative_formula','derivative_type','database_id','ref_text','mass_charge','collision_energy_voltage','sample_concentration','spectra_assessment','solvent','nucleus_y','ionization_mode','collection_date','nucleus','sample_temperature_units','sample_ph','spectra_id','c_ms_id','sample_concentration_units','sample_source','nil_classes','nucleus_x','database','notes','created_at','sample_temperature','ri_type','pubmed_id','molecule_id','column_type','retention_index','collision_energy_level','references','name','accession','chemical_formula','monoisotopic_molecular_weight','iupac_name','traditional_iupac','cas_registry','smiles','inchi','inchikey','taxonomy','biofluid_locations','ids','peak_counter', 'mono_mass', 'ms_ms_id', 'spectra_type'])
+  ms2_xml_file = os.getcwd() + '/hmdb_spectra_xml/combined_file_clean.xml'
+  metabolite_xml_file = os.getcwd() + '/hmdb_metabolites.xml'
+  metabolite_feature_set = set(['accession', 'secondary_accessions', 'name', 
+                'chemical_formula', 
+                'monisotopic_molecular_weight', 'iupac_name', 
+                'traditional_iupac', 'cas_registry_number',
+                'smiles', 'inchi', 'inchikey',
+                'biofluid_locations', 'taxonomy'])
 
-  # metabolite_dict = metabolitePreprocessing(metabolite_xml_file, metabolite_feature_set)
-  # matched_dict, failure_list = MS2Preprocessing(ms2_xml_file, ms2_feature_set, metabolite_dict)
+  metabolite_dict = metabolitePreprocessing(metabolite_xml_file, metabolite_feature_set)
+  matched_dict, failure_list = MS2Preprocessing(ms2_xml_file, ms2_feature_set, metabolite_dict)
 
-  # csv_file_path = os.getcwd() + '/aggregated_metabolites.csv'
-  # writeToCSV(matched_dict, csv_file_path)
+  csv_file_path = os.getcwd() + '/aggregated_metabolites.csv'
+  writeToCSV(matched_dict, csv_file_path)
 
-  file_path = os.getcwd() + '/aggregated_metabolites.csv'
-  m = unpackCSV(file_path)
-  print '\a'
-  import pdb; pdb.set_trace()
+  #######    TO READ IN CSV    #######
+  # file_path = os.getcwd() + '/aggregated_metabolites.csv'
+  # m = unpackCSV(file_path)
 
 
 '''

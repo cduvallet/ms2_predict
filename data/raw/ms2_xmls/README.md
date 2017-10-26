@@ -1,0 +1,1 @@
+Initialize directory to store individual xml files with spectra that will be downloaded from HDMB.

@@ -1,0 +1,1 @@
+Initialize directory to store individual xml files with metabolite metadata that will be downloaded from HDMB.

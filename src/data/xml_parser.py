@@ -230,7 +230,6 @@ def metabolitePreprocessing(xml_file, metabolite_feature_set):
     print 'Done.'
     return metabolite_dict
 
-
 def MS2Preprocessing(xml_file, feature_set, metabolite_dict):
   '''
   Takes in desired features and metabolite dictionary (from
@@ -277,9 +276,9 @@ def MS2Preprocessing(xml_file, feature_set, metabolite_dict):
         failure = True
         break
       #filter out non-GC chromatagraphy data
-      if feature.tag == 'chromatography-type' and feature.text != 'GC':
-        failure = True
-        break
+      #if feature.tag == 'chromatography-type' and feature.text != 'GC':
+      #  failure = True
+      #  break
 
       #collect all id data in dictionary
       if '_id' in feature.tag or feature.tag == 'id' or '-id' in feature.tag:
@@ -437,7 +436,6 @@ def writeToCSV(matched_dict, file_path):
       writer.writerow(writestring_list)
   csv_file.close()
 
-
 def unpackCSV(file_path):
   '''
   Reads from csv, generates {inchikey:Metabolite} dictionary w/populated MS2
@@ -456,6 +454,7 @@ def unpackCSV(file_path):
     #Row is for a Metabolite object
     if row[0]:
       metabolite = Metabolite()
+      ms2_object_lst = []
       for cell in row:
         #dictionary in cell
         if ':' in cell:
@@ -489,7 +488,7 @@ def unpackCSV(file_path):
               setattr(metabolite, attribute, value)
             else:
               setattr(metabolite, attribute, None)
-    #Row is for an MS2 object
+    # If there is nothing in first cell, row is for an MS2 object
     else:
       ms2_object = MS2()
       for cell in row[1:]:
@@ -522,11 +521,11 @@ def unpackCSV(file_path):
           peak_attribute = cell.split('=')[0]
           peak_value = cell.split('=')[1]
           setattr(ms2_object, peak_attribute, peak_value)
-      metabolite.MS2 = ms2_object
+      ms2_object_lst.append(ms2_object)
+    metabolite.MS2 = ms2_object_lst
     metabolite_dict[metabolite.inchikey] = metabolite
 
   return metabolite_dict
-
 
 def testMetabolitePreprocessing(testingCSV=False):
     '''
@@ -758,7 +757,6 @@ def testMS2Preprocessing():
                         print 'Failure. Generated %s value of %s did not matched the expected: %s' % (attribute, generated_value, correct_value)
     return success
 
-
 def testWriteToCSV(testingUnpack=False):
     '''
     Tests writeToCSV()
@@ -836,7 +834,6 @@ def testUnpackCSV():
         if not compareMetabolites(correct_metabolite, generated_metabolite):
             return False
     return True
-
 
 def testAll():
   '''

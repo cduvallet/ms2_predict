@@ -1,0 +1,4 @@
+# Ignore raw data
+*.zip
+data/raw/ms2_xmls/*
+data/raw/metabolite_xmls/*

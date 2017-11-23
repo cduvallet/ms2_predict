@@ -37,5 +37,3 @@ HMDB and MassBankd databases.
 |
 |-- docs (host on readthedocs)
 ```
-
-# AShvin test line

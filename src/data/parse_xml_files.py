@@ -4,6 +4,9 @@ This script reads in the xml file containing all MS2 spectra and the xml
 file containing HMDB metabolite metadata, combines them based on inchikeys,
 and writes them to a csv.
 """
+import sys
+sys.path.insert(0, '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages')
+
 try:
     import xml.etree.cElementTree as ET
 except ImportError:

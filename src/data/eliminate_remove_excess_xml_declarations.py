@@ -1,3 +1,6 @@
+import sys
+sys.path.insert(0, '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages')
+
 import argparse
 import os
 import re

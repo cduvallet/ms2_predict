@@ -5,7 +5,7 @@ This file contains useful functions used multiple times throughout this project.
 from MetabolomicsObjects import Metabolite, MS2, MSPeak
 import csv
 
-def unpackCSV(file_path):
+def unpackCSV(file_path, bins=0, zero_indexed=False):
   '''
   Reads from csv, generates {inchikey:Metabolite} dictionary w/populated MS2
 
@@ -108,4 +108,30 @@ def unpackCSV(file_path):
     metabolite.MS2 = ms2_object_lst
     metabolite_dict[metabolite.inchikey] = metabolite
 
+
+  # peaks expected to be in [mz, intensity] order
+  # maximum mz in dataset is ~2000
+  # bins are one-indexed (not zero-indexed)
+  if bins:
+    dividers = np.linspace(0., 2000, num=bins)
+    if zero_indexed:
+      dividers.pop(0)
+    for metabolite in metabolite_dict.itervalues():
+      for ms2 in metabolite.MS2:
+        if not ms2.peaks: continue
+        for index, (mz, intensity) in enumerate(ms2.peaks):
+          bin = np.searchsorted(dividers, mz)
+          ms2.peaks[index] = bin
+
   return metabolite_dict
+
+
+
+# def produceBins(metabolite_dict, bins=100):
+#   dividers = np.linspace(0., 2000, num=bins)
+#   for metabolite in metabolite_dict.itervalues():
+#     for ms2 in metabolite.MS2:
+#       if not ms2.peaks: continue
+#       for index, (mz, intensity) in enumerate(ms2.peaks):
+#         bin = np.searchsorted(dividers, mz)
+#         ms2.peaks[index] = bin

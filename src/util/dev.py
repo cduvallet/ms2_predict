@@ -3,6 +3,9 @@
 These functions were used during development, but are not incorporated or
 used by any of the final code.
 """
+import sys
+sys.path.insert(0, '/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages')
+
 try:
     import xml.etree.cElementTree as ET
 except ImportError:

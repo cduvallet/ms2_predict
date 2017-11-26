@@ -83,7 +83,7 @@ class StatsMaker:
   def updateCountingDicts(self, taxonomy_dict, ms2_list):
     if not taxonomy_dict:
       return
-    peaks = sum([len(ms2.peaks) for ms2 in ms2_list])
+    peaks = sum([len(ms2.peaks) if ms2.peaks is not None else 0 for ms2 in ms2_list])
     for (dictionary, tax) in [(self.kingdom_dict, 'kingdom'), (self.super_class_dict, 'super_class'), (self.sub_class_dict, 'sub_class'), (self.class_dict, 'class')]:
       tax_instance = taxonomy_dict.get(tax)
       if tax_instance:

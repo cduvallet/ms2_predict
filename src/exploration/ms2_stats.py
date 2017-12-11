@@ -65,8 +65,6 @@ class StatsMaker:
   def updateIonization(self, taxonomy_dict, ms2_list):
     if not taxonomy_dict:
       return
-    # if ms2_list:
-      # import pdb; pdb.set_trace()
     for ms2 in ms2_list:
       ionization_mode = ms2.ionization_mode
       index = self.ionization_modes.index(ionization_mode)
@@ -138,7 +136,201 @@ class StatsMaker:
     #         )
     # plt.show()
 
-    #graphing ionization types
+
+
+    
+
+ 
+
+
+
+    # ##graphing kingdom ionizations
+    # dictionary = self.kingdom_ionization_dict
+    # tax = 'kingdom'
+    # values_array = np.zeros((1,3))
+    # columns = ['tax', 'ionization', 'percentage']
+    # df = pd.DataFrame(values_array, columns=columns)
+
+    # for tax_instance, values in dictionary.iteritems():
+    #   total = float(sum(values))
+    #   for index in xrange(4):
+    #     if index == 0:
+    #       fixed = 0
+    #     else:
+    #       fixed = -1.*index
+    #     df2 = pd.DataFrame(np.array([tax_instance, 1.*index, float(values[index])/total*100]).reshape(1,3), columns=columns)
+    #     df = df.append(df2)
+    # df = df.iloc[1:]
+    # df['x']=sorted(range(df.shape[0]/4)*4)
+
+
+    # print df
+    # csv_path = os.getcwd() + '/ionization.csv'
+    # df = pd.DataFrame.from_csv(csv_path).sort(columns='ionization')
+    # print df
+    # x = df.loc[:, 'x'].tolist()
+    # tax = df.loc[:, 'tax'].tolist()[:len(x)/4]
+    # ionization = df.loc[:, 'ionization'].tolist()
+    # percentage = df.loc[:, 'percentage'].tolist()
+    # tax_instances = len(x)/4
+
+
+    # width = 0.35
+    # colors = ['#d62728', '#0000ff', '#800080', '#00ff00']
+    # graphs = []
+    # for bar_graph_index in xrange(4):
+    #   bar_x = np.arange(tax_instances)
+    #   bar_height = tuple(percentage[tax_instances*bar_graph_index:tax_instances*(bar_graph_index+1)])
+    #   print bar_height
+    #   graph_color = colors[bar_graph_index]
+    #   plot = plt.bar(bar_x, bar_height, width, color=graph_color)
+    #   graphs.append(plot)
+    # plt.ylabel('Percent')
+    # plt.title('Ionization Type Percentages')
+    # plt.xticks(bar_x, (tax))
+    # plt.yticks(np.arange(0, 110, 10))
+    # plt.ylim(0, 150)
+    # plt.legend(tuple([graph[0] for graph in graphs]), ('Positive', 'Negative', 'N/A', 'None'))
+    # print df
+    # plt.show()
+
+
+
+    # ###graphing super class ionizations
+    #     dictionary = self.kingdom_ionization_dict
+    # tax = 'kingdom'
+    # values_array = np.zeros((1,3))
+    # columns = ['tax', 'ionization', 'percentage']
+    # df = pd.DataFrame(values_array, columns=columns)
+
+    # for tax_instance, values in dictionary.iteritems():
+    #   total = float(sum(values))
+    #   for index in xrange(4):
+    #     if index == 0:
+    #       fixed = 0
+    #     else:
+    #       fixed = -1.*index
+    #     df2 = pd.DataFrame(np.array([tax_instance, 1.*index, float(values[index])/total*100]).reshape(1,3), columns=columns)
+    #     df = df.append(df2)
+    # df = df.iloc[1:]
+    # df['x']=sorted(range(df.shape[0]/4)*4)
+
+
+    # # print df
+    # csv_path = os.getcwd() + '/ionization.csv'
+    # df = pd.DataFrame.from_csv(csv_path).sort(columns='ionization')
+    # print df
+    # x = df.loc[:, 'x'].tolist()
+    # tax = df.loc[:, 'tax'].tolist()[:len(x)/4]
+    # ionization = df.loc[:, 'ionization'].tolist()
+    # percentage = df.loc[:, 'percentage'].tolist()
+    # tax_instances = len(x)/4
+
+
+    # width = 0.35
+    # colors = ['#d62728', '#0000ff', '#800080', '#00ff00']
+    # graphs = []
+    # for bar_graph_index in xrange(4):
+    #   bar_x = np.arange(tax_instances)
+    #   bar_height = tuple(percentage[tax_instances*bar_graph_index:tax_instances*(bar_graph_index+1)])
+    #   print bar_height
+    #   graph_color = colors[bar_graph_index]
+    #   plot = plt.bar(bar_x, bar_height, width, color=graph_color)
+    #   graphs.append(plot)
+    # plt.ylabel('Percent')
+    # plt.title('Ionization Type Percentages')
+    # plt.xticks(bar_x, (tax))
+    # plt.yticks(np.arange(0, 110, 10))
+    # plt.ylim(0, 150)
+    # plt.legend(tuple([graph[0] for graph in graphs]), ('Positive', 'Negative', 'N/A', 'None'))
+    # print df
+    # plt.show()
+
+    # assert False
+
+
+
+
+
+
+    # x = df.loc[:, 'x'].tolist()
+    # tax = df.loc[:, 'tax'].tolist()[:len(x)/4]
+    # ionization = df.loc[:, 'ionization'].tolist()
+    # percentage = df.loc[:, 'percentage'].tolist()
+    # tax_instances = len(x)/4
+
+    # width = 0.35
+    # colors = ['#d62728', '#0000ff', '#800080', '#00ff00']
+    # graphs = []
+    # for bar_graph_index in xrange(4):
+    #   bar_x = np.arange(tax_instances)
+    #   bar_height = tuple(percentage[tax_instances*bar_graph_index:tax_instances*(bar_graph_index+1)])
+    #   print bar_height
+    #   graph_color = colors[bar_graph_index]
+    #   plot = plt.bar(bar_x, bar_height, width, color=graph_color)
+    #   graphs.append(plot)
+    # plt.ylabel('Percent')
+    # plt.title('Ionization Type Percentages')
+    # plt.xticks(bar_x, (tax))
+    # plt.yticks(np.arange(0, 110, 10))
+    # plt.ylim(0, 150)
+    # plt.legend(tuple([graph[0] for graph in graphs]), ('Positive', 'Negative', 'N/A', 'None'))
+    # plt.show()
+
+
+
+
+
+
+    # dictionary = self.super_class_ionization_dict
+    # tax = 'super_class'
+    # values_array = np.zeros((1,3))
+    # columns = ['tax', 'ionization', 'percentage']
+    # df = pd.DataFrame(values_array, columns=columns)
+
+    # for tax_instance, values in dictionary.iteritems():
+    #   total = float(sum(values))
+    #   for index in xrange(4):
+    #     if index == 0:
+    #       fixed = 0
+    #     else:
+    #       fixed = -1.*index
+    #     df2 = pd.DataFrame(np.array([tax_instance, 1.*index, float(values[index])/total*100]).reshape(1,3), columns=columns)
+    #     df = df.append(df2)
+    # df = df.iloc[1:]
+    # df['x']=sorted(range(df.shape[0]/4)*4)
+
+
+
+    # x = df.loc[:, 'x'].tolist()
+    # tax = df.loc[:, 'tax'].tolist()[:len(x)/4]
+    # ionization = df.loc[:, 'ionization'].tolist()
+    # percentage = df.loc[:, 'percentage'].tolist()
+    # tax_instances = len(x)/4
+
+    # width = 0.35
+    # colors = ['#d62728', '#0000ff', '#800080', '#00ff00']
+    # graphs = []
+    # for bar_graph_index in xrange(4):
+    #   bar_x = np.arange(tax_instances)
+    #   bar_height = tuple(percentage[tax_instances*bar_graph_index:tax_instances*(bar_graph_index+1)])
+    #   print bar_height
+    #   graph_color = colors[bar_graph_index]
+    #   plot = plt.bar(bar_x, bar_height, width, color=graph_color)
+    #   graphs.append(plot)
+    # plt.ylabel('Percent')
+    # plt.title('Ionization Type Percentages')
+    # plt.xticks(bar_x, (tax))
+    # plt.yticks(np.arange(0, 110, 10))
+    # plt.ylim(0, 150)
+    # plt.legend(tuple([graph[0] for graph in graphs]), ('Positive', 'Negative', 'N/A', 'None'))
+    # plt.show()
+
+
+
+    # assert False
+
+
     for (tax, dictionary) in [('kingdom', self.kingdom_ionization_dict), ('super_class', self.super_class_ionization_dict), ('class', self.class_ionization_dict), ('sub_class', self.sub_class_ionization_dict)]:
       values_array = np.zeros((1,3))
       columns = ['tax', 'ionization', 'percentage']
@@ -150,18 +342,60 @@ class StatsMaker:
             fixed = 0
           else:
             fixed = -1.*index
-
           df2 = pd.DataFrame(np.array([tax_instance, 1.*index, float(values[index])/total*100]).reshape(1,3), columns=columns)
-          # df2 = pd.DataFrame(np.array([tax_instance, str(self.ionization_modes[index]), float(values[index])/total*100]).reshape(1,3), columns=columns)
           df = df.append(df2)
       df = df.iloc[1:]
       df['x']=sorted(range(df.shape[0]/4)*4)
+      df.to_csv(os.getcwd() + '/ionization.csv')
+
+
+      csv_path = os.getcwd() + '/ionization.csv'
+      df = pd.DataFrame.from_csv(csv_path).sort(columns='ionization')
+      x = df.loc[:, 'x'].tolist()
+      tax = df.loc[:, 'tax'].tolist()[:len(x)/4]
+      ionization = df.loc[:, 'ionization'].tolist()
+      percentage = df.loc[:, 'percentage'].tolist()
+      tax_instances = len(x)/4
+
+
+      width = 0.35
+      colors = ['#d62728', '#0000ff', '#800080', '#00ff00']
+      graphs = []
+      for bar_graph_index in xrange(4):
+        bar_x = np.arange(tax_instances)
+        bar_height = tuple(percentage[tax_instances*bar_graph_index:tax_instances*(bar_graph_index+1)])
+        print bar_height
+        graph_color = colors[bar_graph_index]
+        plot = plt.bar(bar_x, bar_height, width, color=graph_color)
+        graphs.append(plot)
+      plt.ylabel('Percent')
+      plt.title('Ionization Type Percentages')
+      plt.xticks(bar_x, (tax))
+      plt.yticks(np.arange(0, 110, 10))
+      plt.ylim(0, 150)
+      plt.legend(tuple([graph[0] for graph in graphs]), ('Positive', 'Negative', 'N/A', 'None'))
+      plt.xticks(rotation=300)
       print df
-      sns.set(style="whitegrid")
-      ####CLAIRE FIX THIS LINE PLEASE######
-      sns.factorplot(kind='bar', x='x', y='percentage', hue_order=['3', '2', '1', '0'], hue='ionization', data=df)
-      # sns.factorplot(kind='bar', x='x', y='percentage', hue_order=['Positive', 'Negative', 'N/A', 'None'], hue='ionization', data=df)
       plt.show()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      # sns.set(style="whitegrid")
+      ####CLAIRE FIX THIS LINE PLEASE######
+      # sns.factorplot(kind='bar', x='x', y='percentage', hue_order=['3', '2', '1', '0'], hue='ionization', data=df)
+      ## sns.factorplot(kind='bar', x='x', y='percentage', hue_order=['Positive', 'Negative', 'N/A', 'None'], hue='ionization', data=df)
+      # plt.show()
 
 
     #graphing total MS2s and avg peaks/MS2 at each taxonomy level
@@ -170,6 +404,7 @@ class StatsMaker:
     #a column with the total MS2's for that particular taxonomy instance
     #a column with the average peaks/MS2 at that particular taxonomy instance
     #a column that provides hues
+    assert False
     for (tax, dictionary) in [('kingdom', self.kingdom_dict), ('super_class', self.super_class_dict), ('class', self.class_dict), ('sub_class', self.sub_class_dict)]:
       values_array = np.zeros((1,4))
       columns = ['tax', 'MS2s', 'avg peaks/MS2', 'x']
@@ -216,3 +451,63 @@ class StatsMaker:
 if __name__=='__main__':
   stats = StatsMaker()
   stats.runStats()
+
+  # csv_path = os.getcwd() + '/ionization.csv'
+  # df = pd.DataFrame.from_csv(csv_path).sort(columns='ionization')
+  # x = df.loc[:, 'x'].tolist()
+  # tax = df.loc[:, 'tax'].tolist()[:len(x)/4]
+  # ionization = df.loc[:, 'ionization'].tolist()
+  # percentage = df.loc[:, 'percentage'].tolist()
+  # tax_instances = len(x)/4
+
+
+  # width = 0.35
+  # colors = ['#d62728', '#0000ff', '#800080', '#00ff00']
+  # graphs = []
+  # for bar_graph_index in xrange(4):
+  #   bar_x = np.arange(tax_instances)
+  #   bar_height = tuple(percentage[tax_instances*bar_graph_index:tax_instances*(bar_graph_index+1)])
+  #   print bar_height
+  #   graph_color = colors[bar_graph_index]
+  #   plot = plt.bar(bar_x, bar_height, width, color=graph_color)
+  #   graphs.append(plot)
+  # plt.ylabel('Percent')
+  # plt.title('Ionization Type Percentages')
+  # plt.xticks(bar_x, (tax))
+  # plt.yticks(np.arange(0, 110, 10))
+  # plt.ylim(0, 150)
+  # plt.legend(tuple([graph[0] for graph in graphs]), ('Positive', 'Negative', 'N/A', 'None'))
+  # print df
+  # plt.show()
+
+
+
+
+
+
+
+
+#  N = 2
+# menMeans = (20, 35)
+# womenMeans = (25, 32)
+# ind = np.arange(N)    # the x locations for the groups
+# width = 0.35       # the width of the bars: can also be len(x) sequence
+
+# p1 = plt.bar(ind, menMeans, width, color='#d62728')
+# p2 = plt.bar(ind, womenMeans, width,
+#              bottom=menMeans)
+
+# plt.ylabel('Scores')
+# plt.title('Scores by group and gender')
+# plt.xticks(ind, ('G1', 'G2', 'G3', 'G4', 'G5'))
+# plt.yticks(np.arange(0, 81, 10))
+# # plt.legend((p1[0], p2[0]), ('Men', 'Women'))
+
+# plt.show()
+
+
+
+
+
+
+

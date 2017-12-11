@@ -5,3 +5,7 @@ data/raw/ms2_xmls/*
 data/raw/metabolite_xmls/*
 *.pyc
 *.png
+*.csv
+*.xml
+ms2_stats.py
+

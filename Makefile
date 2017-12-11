@@ -22,7 +22,13 @@ metabolites_clean = $(CLEAN)/hmdb_metabolites.xml
 # CSV version of xml files
 csv_data = $(CLEAN)/metabolites_and_spectra.csv
 
-data: $(concat_ms2_clean) $(concat_hmdb_clean) $(csv_data)
+# JSON version of csv data, with curated metabolites
+json_data = $(CLEAN)/clean_spectra.json
+
+# Feature table with all scans (positive, negative, and n/a) merged (duplicate mz's removed, highest intensity peak retained)
+feat_table = data/feature_tables/raw_mz.all_scans.txt
+
+data: $(concat_ms2_clean) $(concat_hmdb_clean) $(csv_data) $(json_data)
 
 ################################
 #                              #
@@ -55,3 +61,28 @@ $(metabolites_clean): $(raw_hmdb)
 # Use xml_parser.py to combine the metabolite metadata with spectra info
 $(csv_data): $(SRCDATA)/parse_xml_files.py $(concat_ms2_clean) $(metabolites_clean)
 	python $< $(concat_ms2_clean) $(metabolites_clean) $@
+
+# Convert csv into easy-to-read json with only metabolites of interest
+$(json_data): $(SRCDATA)/clean_csv.py $(csv_data)
+	python $< $(csv_data) $@ --npeaks 3
+
+$(merged_json): $(SRCDATA)/make_merged_json.py $(json_data)
+	python $< $(json_data) $(merged_json)
+
+# MS2LDA results on the non-collapsed spectra
+$(ms2lda_data): $(SRCDATA)/run_ms2lda.py $(json_data)
+	python $< $(json_data) $@
+
+# MS2LDA results on collapsed spectra
+$(collapsed_ms2lda_data): $(SRCDATA)/run_ms2lda.py $(merged_json)
+	python $< $(merged_json) $@
+
+### FEATURE TABLES
+
+## Convert json to positive, negative, and all_scans feature tables
+# python src/data/make_mz_feature_tables.py data/clean/clean_spectra.json data/feature_tables/
+
+## MS2LDA feature tables
+#python src/data/ms2lda_to_feature_table.py data/clean/ms2lda_results.txt data/clean/clean_spectra.json data/feature_tables/ms2lda_feature_table.txt
+
+#python src/data/ms2lda_to_feature_table.py data/clean/ms2lda_results.merged_spectra.txt data/clean/clean_spectra.by_inchi.json data/feature_tables/ms2lda_feature_table.merged_spectra.txt

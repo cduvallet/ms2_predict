@@ -66,6 +66,7 @@ $(csv_data): $(SRCDATA)/parse_xml_files.py $(concat_ms2_clean) $(metabolites_cle
 $(json_data): $(SRCDATA)/clean_csv.py $(csv_data)
 	python $< $(csv_data) $@ --npeaks 3
 
+# Make similar json, but with the merged spectra (inchikey as the top keys)
 $(merged_json): $(SRCDATA)/make_merged_json.py $(json_data)
 	python $< $(json_data) $(merged_json)
 

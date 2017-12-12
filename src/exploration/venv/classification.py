@@ -29,7 +29,6 @@ class Trainer:
 
 
   def preprocess(self, path, tax_type):
-    #last four rows are inchi, kingdom, sub_class, class
     df = pd.read_table(path)
     df = df.rename(index=str, columns={"class": "_class"})
 
@@ -213,7 +212,7 @@ class Trainer:
   def AUC(self, tax_type):
     #calculate AUC
     #must transition to 'binary' classification
-    if tax_type == 'kingdom': 
+    if tax_type == 'kingdom':
       classes = 2
     elif tax_type == 'subclass': classes = len(self.subclasses)
     elif tax_type == 'class': classes = len(self.classes)

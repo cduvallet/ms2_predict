@@ -1,0 +1,13 @@
+	clf (SVM/RF)	features (MS2/LDA)	label(K, C, SC)
+1	SVM		MS2			K
+2	RF		MS2			K
+3	SVM		MS2			SC
+4	RF		MS2			SC
+5	SVM		MS2			C
+6	RF		MS2			C
+7	SVM		LDA			K
+8	RF		LDA			K
+9	SVM		LDA			SC
+10	RF		LDA			SC
+11	SVM		LDA			C
+12	RF		LDA			C

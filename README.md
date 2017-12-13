@@ -1,5 +1,8 @@
 # ms2_predict
 
+Note: the current `Makefile` is not complete and will likely not run to completion
+and will certainly not reproduce all of the analyses included in our 6.867 report.
+
 Predict chemical class label from MS2 data using classifiers trained on
 HMDB and MassBankd databases.
 

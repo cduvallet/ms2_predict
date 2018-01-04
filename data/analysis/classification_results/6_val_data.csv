@@ -1,0 +1,553 @@
+,Label,Predicted,prob1,prob2,prob3,prob4,prob5,prob6,prob7,prob8,prob9,prob10,prob11,prob12
+0,Organic oxygen compounds;,Organic oxygen compounds;,0.002,0.0042,0.0164,0.0152,0.1058,0.0124,0.0814,0.6832,0.0164,0.0552,0.0044,0.0034
+1,Organic acids and derivatives;,Organic acids and derivatives;,0.0212,0.0254,0.0482,0.0098,0.0192,0.0562,0.7152,0.0262,0.0388,0.007,0.015,0.0178
+2,Benzenoids;,Benzenoids;,0.0096,0.6506,0.0162,0.0036,0.0494,0.057,0.144,0.0248,0.0154,0.0066,0.0138,0.009
+3,Benzenoids;,Benzenoids;,0.1158,0.7124,0.0108,0.0082,0.0218,0.0004,0.0262,0.0192,0.0238,0.0344,0.0254,0.0016
+4,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0144,0.027,0.6794,0.0194,0.0364,0.0098,0.1308,0.0184,0.0258,0.028,0.0052,0.0054
+5,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0032,0.0216,0.0308,0.0052,0.0468,0.7044,0.1096,0.0154,0.0398,0.005,0.0128,0.0054
+6,Organic acids and derivatives;,Organic acids and derivatives;,0.0328,0.0236,0.0176,0.007,0.0148,0.0194,0.7402,0.0322,0.0676,0.0048,0.0294,0.0106
+7,Organic acids and derivatives;,Organic acids and derivatives;,0.0008,0.0278,0.0064,0.009,0.0454,0.0262,0.818,0.0154,0.0358,0.0054,0.0034,0.0064
+8,Organic acids and derivatives;,Organic acids and derivatives;,0.0136,0.044,0.0092,0.0236,0.0864,0.027,0.7146,0.0196,0.0362,0.0188,0.0048,0.0022
+9,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0032,0.0036,0.0242,0.0584,0.7184,0.002,0.0886,0.03,0.015,0.0554,0.001,0.0002
+10,Organic oxygen compounds;,Organic oxygen compounds;,0.0052,0.0042,0.0054,0.0128,0.045,0.0418,0.0642,0.772,0.022,0.0144,0.0084,0.0046
+11,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0004,0.0172,0.0028,0.005,0.035,0.747,0.1446,0.011,0.014,0.0012,0.0092,0.0126
+12,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0028,0.0044,0.0106,0.091,0.7668,0.0024,0.0392,0.022,0.031,0.0248,0.0026,0.0024
+13,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0032,0.025,0.0016,0.009,0.0568,0.0048,0.035,0.0152,0.0334,0.0058,0.0086,0.8016
+14,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.7008,0.0402,0.011,0.0396,0.0658,0.0064,0.0398,0.0178,0.0466,0.017,0.0128,0.0022
+15,Fatty Acyls;,Fatty Acyls;,0.019,0.0094,0.0328,0.6956,0.1134,0.0042,0.0426,0.0226,0.0296,0.022,0.0026,0.0062
+16,Organic acids and derivatives;,Organic acids and derivatives;,0.0104,0.0234,0.0174,0.0072,0.0448,0.011,0.7598,0.0358,0.0478,0.011,0.0056,0.0258
+17,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0102,0.0286,0.0018,0.004,0.0174,0.8074,0.0764,0.0056,0.0302,0.0024,0.0072,0.0088
+18,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0192,0.0138,0.6764,0.0092,0.0158,0.0886,0.0736,0.0258,0.0392,0.001,0.0174,0.02
+19,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.009,0.0092,0.0278,0.0382,0.724,0.0002,0.0532,0.032,0.02,0.0822,0.0036,0.0006
+20,Organic acids and derivatives;,Organic acids and derivatives;,0.0016,0.0034,0.0252,0.004,0.0252,0.0058,0.8014,0.0396,0.0462,0.0434,0.0032,0.001
+21,Organic acids and derivatives;,Organic acids and derivatives;,0.0072,0.0086,0.038,0.031,0.0492,0.0054,0.788,0.0246,0.0186,0.0276,0.0012,0.0006
+22,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0042,0.0054,0.0096,0.0098,0.7084,0.052,0.1504,0.028,0.0126,0.0074,0.007,0.0052
+23,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.003,0.0014,0.0158,0.0186,0.075,0.6462,0.0918,0.0602,0.031,0.0524,0.0006,0.004
+24,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0192,0.0304,0.0104,0.0178,0.0522,0.0246,0.0692,0.0322,0.0442,0.0134,0.017,0.6694
+25,Organic acids and derivatives;,Organic acids and derivatives;,0.0008,0.005,0.0172,0.0006,0.0268,0.0348,0.8416,0.0224,0.01,0.0288,0.0078,0.0042
+26,Organic acids and derivatives;,Organic acids and derivatives;,0.0012,0.0056,0.019,0.0092,0.057,0.0024,0.856,0.0314,0.0046,0.0112,0.002,0.0004
+27,Organic oxygen compounds;,Organic oxygen compounds;,0.0072,0.1512,0.0156,0.0012,0.0366,0.0034,0.0968,0.6454,0.022,0.0066,0.0126,0.0014
+28,Organic acids and derivatives;,Organic acids and derivatives;,0.0072,0.0186,0.0024,0.019,0.0378,0.0702,0.734,0.0356,0.0496,0.0082,0.0072,0.0102
+29,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0134,0.0064,0.667,0.0342,0.0372,0.0094,0.1782,0.0154,0.023,0.0108,0.0018,0.0032
+30,Organic acids and derivatives;,Organic acids and derivatives;,0.0098,0.009,0.088,0.0238,0.0322,0.0132,0.7468,0.0244,0.0124,0.033,0.0048,0.0026
+31,Organic acids and derivatives;,Organic acids and derivatives;,0.0034,0.014,0.0226,0.0108,0.0412,0.0758,0.7604,0.0198,0.019,0.0006,0.0078,0.0246
+32,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0104,0.0248,0.0036,0.006,0.7384,0.0078,0.0428,0.0198,0.0638,0.0068,0.019,0.0568
+33,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0162,0.0204,0.688,0.009,0.0208,0.0062,0.1548,0.0256,0.019,0.0262,0.0082,0.0056
+34,Organic acids and derivatives;,Organic acids and derivatives;,0.0002,0.0144,0.0282,0.0036,0.0408,0.0402,0.8058,0.0092,0.0336,0.0072,0.0136,0.0032
+35,Organic acids and derivatives;,Organic acids and derivatives;,0.0084,0.0884,0.0074,0.0054,0.0164,0.0046,0.7608,0.0228,0.045,0.009,0.0226,0.0092
+36,Organic oxygen compounds;,Organic oxygen compounds;,0.0064,0.0128,0.0438,0.016,0.07,0.0048,0.1154,0.6616,0.0102,0.0512,0.0038,0.004
+37,Organic acids and derivatives;,Organic acids and derivatives;,0.0034,0.0458,0.0266,0.0002,0.0296,0.009,0.8152,0.0206,0.0172,0.0146,0.0118,0.006
+38,Organic acids and derivatives;,Organic acids and derivatives;,0.0002,0.0054,0.0092,0.0098,0.0492,0.0398,0.8162,0.027,0.0182,0.0132,0.0076,0.0042
+39,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0104,0.0188,0.0122,0.0178,0.7064,0.028,0.0476,0.0336,0.0376,0.0116,0.0118,0.0642
+40,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0148,0.0138,0.678,0.0162,0.0436,0.007,0.1454,0.0212,0.0182,0.035,0.0056,0.0012
+41,Fatty Acyls;,Fatty Acyls;,0.004,0.0032,0.0274,0.679,0.084,0.0006,0.0428,0.0388,0.0368,0.0816,0.0016,0.0002
+42,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0056,0.0034,0.0056,0.0256,0.0294,0.0054,0.0134,0.0176,0.011,0.002,0.0026,0.8784
+43,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0032,0.003,0.6654,0.0182,0.0302,0.0018,0.0652,0.0328,0.0204,0.1592,0.0002,0.0004
+44,Organic oxygen compounds;,Organic oxygen compounds;,0.0032,0.0068,0.0066,0.014,0.051,0.0172,0.063,0.7802,0.0352,0.0126,0.0026,0.0076
+45,Organic oxygen compounds;,Organic oxygen compounds;,0.0122,0.0442,0.0076,0.0028,0.024,0.0048,0.0952,0.7172,0.0296,0.0366,0.016,0.0098
+46,Organic acids and derivatives;,Organic acids and derivatives;,0.0122,0.0182,0.0192,0.0236,0.0302,0.0554,0.7448,0.026,0.0376,0.0048,0.0124,0.0156
+47,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0106,0.033,0.0106,0.0126,0.671,0.032,0.1582,0.0166,0.0304,0.0086,0.0104,0.006
+48,Organic acids and derivatives;,Organic acids and derivatives;,0.0022,0.0198,0.0276,0.0108,0.1094,0.0088,0.7226,0.0186,0.0248,0.0456,0.007,0.0028
+49,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.005,0.017,0.007,0.0214,0.03,0.733,0.0632,0.0334,0.0418,0.0056,0.0082,0.0344
+50,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0144,0.039,0.0156,0.0034,0.0514,0.0084,0.1088,0.0186,0.6906,0.0076,0.024,0.0182
+51,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0234,0.041,0.0164,0.0084,0.0244,0.0242,0.1142,0.0142,0.7006,0.0114,0.0164,0.0054
+52,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0318,0.0246,0.6976,0.0208,0.0248,0.0076,0.07,0.017,0.0254,0.0666,0.01,0.0038
+53,Benzenoids;,Benzenoids;,0.0108,0.654,0.0104,0.0072,0.0364,0.018,0.0888,0.0276,0.0968,0.0132,0.0052,0.0316
+54,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.703,0.0566,0.0272,0.0198,0.0268,0.006,0.0436,0.0184,0.0508,0.024,0.0222,0.0016
+55,Organic oxygen compounds;,Organic oxygen compounds;,0.0036,0.011,0.0104,0.0082,0.0388,0.0086,0.0608,0.7266,0.0326,0.0808,0.0106,0.008
+56,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0036,0.0062,0.6818,0.0126,0.0446,0.0054,0.1604,0.0414,0.0132,0.0284,0.0012,0.0012
+57,Organic acids and derivatives;,Organic acids and derivatives;,0.0012,0.002,0.0196,0.0094,0.0372,0.0012,0.8908,0.0214,0.005,0.0104,0.0016,0.0002
+58,Organooxygen compounds;,Organooxygen compounds;,0.0008,0.002,0.0202,0.012,0.1072,0.0122,0.1192,0.0632,0.0086,0.651,0.0006,0.003
+59,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6352,0.0152,0.007,0.0102,0.0538,0.0674,0.0852,0.0308,0.0362,0.0052,0.0148,0.039
+60,Benzenoids;,Benzenoids;,0.0234,0.6916,0.016,0.0052,0.0224,0.031,0.0896,0.0218,0.0342,0.0082,0.0404,0.0162
+61,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0282,0.0574,0.0126,0.018,0.062,0.0094,0.084,0.0328,0.6634,0.0216,0.0068,0.0038
+62,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.008,0.0362,0.6504,0.001,0.0386,0.0028,0.1766,0.0346,0.0136,0.017,0.0128,0.0084
+63,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.002,0.0148,0.0184,0.0082,0.0288,0.0292,0.1586,0.0314,0.6656,0.0142,0.0228,0.006
+64,Organic oxygen compounds;,Organic oxygen compounds;,0.0234,0.0166,0.0186,0.0574,0.066,0.0016,0.0366,0.673,0.035,0.0692,0.0022,0.0004
+65,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.656,0.0564,0.0166,0.0178,0.0372,0.0424,0.0688,0.024,0.046,0.0074,0.0078,0.0196
+66,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0046,0.0116,0.0028,0.0094,0.0576,0.0082,0.024,0.0146,0.0216,0.0062,0.0054,0.834
+67,Organic acids and derivatives;,Organic acids and derivatives;,0.0036,0.007,0.0496,0.016,0.0616,0.0052,0.7992,0.0204,0.014,0.0178,0.003,0.0026
+68,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0056,0.0054,0.7384,0.013,0.0446,0.002,0.0864,0.0206,0.0046,0.0762,0.003,0.0002
+69,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0022,0.0104,0.6296,0.0032,0.0424,0.0346,0.2392,0.0104,0.0136,0.0026,0.0102,0.0016
+70,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0122,0.025,0.0052,0.0056,0.0686,0.025,0.0342,0.02,0.736,0.0028,0.0176,0.0478
+71,Fatty Acyls;,Fatty Acyls;,0.0118,0.0084,0.0172,0.7338,0.071,0.0078,0.041,0.027,0.0212,0.0124,0.0072,0.0412
+72,Organic acids and derivatives;,Organic acids and derivatives;,0.009,0.0272,0.0046,0.0362,0.0406,0.0348,0.7322,0.0156,0.0512,0.0064,0.03,0.0122
+73,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0196,0.0792,0.0042,0.0088,0.689,0.0138,0.0462,0.0144,0.082,0.0066,0.0176,0.0186
+74,Benzenoids;,Benzenoids;,0.0072,0.7374,0.0032,0.0004,0.0426,0.015,0.07,0.0088,0.0566,0.0118,0.0366,0.0104
+75,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0046,0.0412,0.008,0.0104,0.057,0.0182,0.0748,0.0406,0.0552,0.0266,0.0224,0.641
+76,Organic oxygen compounds;,Organic oxygen compounds;,0.0272,0.0346,0.0198,0.0074,0.0224,0.0238,0.083,0.657,0.0694,0.009,0.0312,0.0152
+77,Organic acids and derivatives;,Organic acids and derivatives;,0.0146,0.0138,0.0594,0.0174,0.0518,0.0182,0.748,0.0238,0.0138,0.029,0.0058,0.0044
+78,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0034,0.0398,0.0136,0.0048,0.0328,0.0238,0.0986,0.0238,0.7224,0.0114,0.0164,0.0092
+79,Benzenoids;,Benzenoids;,0.0346,0.726,0.0072,0.0086,0.0274,0.011,0.0798,0.0232,0.0362,0.0108,0.0328,0.0024
+80,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0138,0.0176,0.038,0.0128,0.0562,0.6846,0.047,0.037,0.0258,0.0096,0.012,0.0456
+81,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.006,0.0206,0.0116,0.014,0.041,0.04,0.1702,0.0128,0.6646,0.0082,0.0072,0.0038
+82,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0092,0.0336,0.0056,0.0046,0.0214,0.0052,0.067,0.021,0.7628,0.005,0.0182,0.0464
+83,Organic oxygen compounds;,Organic oxygen compounds;,0.0262,0.019,0.0196,0.0108,0.0344,0.0234,0.0618,0.6622,0.066,0.0048,0.0308,0.041
+84,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0114,0.0056,0.0132,0.1226,0.6916,0.007,0.063,0.0262,0.0354,0.0182,0.002,0.0038
+85,Organic oxygen compounds;,Organic oxygen compounds;,0.0006,0.0074,0.009,0.0036,0.0496,0.0306,0.2314,0.642,0.0046,0.007,0.0122,0.002
+86,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.025,0.0198,0.6618,0.0142,0.0362,0.0288,0.0826,0.0286,0.0582,0.0058,0.0176,0.0214
+87,Organic acids and derivatives;,Organic acids and derivatives;,0.0082,0.0592,0.0078,0.002,0.0618,0.0102,0.687,0.0202,0.064,0.0126,0.02,0.047
+88,Organic oxygen compounds;,Organic oxygen compounds;,0.0086,0.005,0.015,0.0172,0.0328,0.0126,0.071,0.7798,0.038,0.0124,0.0022,0.0054
+89,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0134,0.0092,0.0194,0.095,0.6962,0.0076,0.0832,0.0198,0.0224,0.0222,0.0048,0.0068
+90,Benzenoids;,Benzenoids;,0.085,0.8172,0.0034,0.0084,0.0236,0.0002,0.0088,0.0072,0.0206,0.0126,0.0118,0.0012
+91,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0032,0.0176,0.0034,0.0062,0.0218,0.8224,0.0934,0.0106,0.0108,0.0016,0.005,0.004
+92,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0008,0.0012,0.0248,0.0442,0.8162,0.007,0.0798,0.0124,0.002,0.0096,0.0018,0.0002
+93,Fatty Acyls;,Fatty Acyls;,0.0058,0.0086,0.0606,0.6628,0.1044,0.0136,0.0972,0.0146,0.018,0.0086,0.0044,0.0014
+94,Organic acids and derivatives;,Organic acids and derivatives;,0.0048,0.004,0.0344,0.0084,0.0416,0.0092,0.7634,0.0476,0.0098,0.0728,0.0022,0.0018
+95,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.062,0.0464,0.0176,0.0118,0.0298,0.0128,0.0804,0.0134,0.6918,0.0086,0.021,0.0044
+96,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0058,0.0268,0.0038,0.011,0.0814,0.0088,0.048,0.0182,0.0312,0.0112,0.0122,0.7416
+97,Fatty Acyls;,Fatty Acyls;,0.0088,0.0052,0.0104,0.7482,0.1206,0.005,0.0384,0.0254,0.0178,0.0174,0.0012,0.0016
+98,Organic acids and derivatives;,Organic acids and derivatives;,0.004,0.0454,0.0162,0.002,0.0402,0.016,0.7638,0.0338,0.039,0.022,0.012,0.0056
+99,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0136,0.0082,0.7038,0.0178,0.0298,0.037,0.1028,0.0308,0.0232,0.0094,0.0044,0.0192
+100,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0114,0.023,0.029,0.0106,0.0148,0.112,0.1006,0.023,0.652,0.0024,0.0112,0.01
+101,Organic oxygen compounds;,Organic oxygen compounds;,0.0014,0.0078,0.005,0.009,0.0292,0.0206,0.0284,0.8144,0.0096,0.0658,0.005,0.0038
+102,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.014,0.014,0.0192,0.0162,0.066,0.0252,0.0398,0.0312,0.0344,0.014,0.0118,0.7142
+103,Organic acids and derivatives;,Organic acids and derivatives;,0.007,0.101,0.005,0.0018,0.0234,0.0376,0.7072,0.0216,0.0282,0.0078,0.0492,0.0102
+104,Organic oxygen compounds;,Organic oxygen compounds;,0.006,0.0264,0.0126,0.0092,0.0818,0.0084,0.0766,0.6954,0.0352,0.0186,0.0086,0.0212
+105,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0152,0.0396,0.0166,0.0108,0.026,0.6994,0.0846,0.0246,0.0506,0.008,0.013,0.0116
+106,Organooxygen compounds;,Organooxygen compounds;,0.0052,0.0168,0.0162,0.0178,0.0496,0.0026,0.069,0.0424,0.0292,0.7432,0.0068,0.0012
+107,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0534,0.0744,0.0092,0.0026,0.0246,0.0032,0.0698,0.051,0.0356,0.0222,0.6448,0.0092
+108,Benzenoids;,Benzenoids;,0.0148,0.7268,0.0096,0.0014,0.0082,0.0066,0.1182,0.0136,0.0336,0.0064,0.0594,0.0014
+109,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0018,0.0068,0.0132,0.0122,0.0908,0.0448,0.0888,0.0372,0.0122,0.0262,0.0034,0.6626
+110,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0088,0.038,0.0084,0.0092,0.054,0.0366,0.0786,0.037,0.676,0.0078,0.0248,0.0208
+111,Benzenoids;,Benzenoids;,0.007,0.7682,0.0018,0.0018,0.0204,0.0784,0.0672,0.007,0.0234,0.006,0.01,0.0088
+112,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0088,0.0452,0.0126,0.0076,0.0136,0.6742,0.146,0.0264,0.0358,0.0116,0.014,0.0042
+113,Fatty Acyls;,Fatty Acyls;,0.0136,0.0142,0.0174,0.6906,0.1024,0.0054,0.0532,0.0298,0.0278,0.0194,0.0072,0.019
+114,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.7026,0.0924,0.0298,0.0084,0.0144,0.005,0.0458,0.0108,0.0356,0.0334,0.02,0.0018
+115,Organic acids and derivatives;,Organic acids and derivatives;,0.0228,0.0276,0.0202,0.0144,0.0268,0.0082,0.7886,0.02,0.047,0.0086,0.0086,0.0072
+116,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0394,0.0304,0.0216,0.0602,0.0642,0.0064,0.0514,0.0388,0.6594,0.0194,0.0076,0.0012
+117,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0018,0.002,0.0102,0.0392,0.086,0.077,0.0926,0.009,0.6568,0.0178,0.0012,0.0064
+118,Organic acids and derivatives;,Organic acids and derivatives;,0.0036,0.026,0.01,0.0062,0.0534,0.0196,0.79,0.0346,0.0232,0.0104,0.0134,0.0096
+119,Organic acids and derivatives;,Organic acids and derivatives;,0.0034,0.0178,0.0466,0.011,0.0414,0.006,0.8342,0.0076,0.02,0.0054,0.005,0.0016
+120,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0082,0.0474,0.0106,0.0096,0.0222,0.0876,0.0828,0.0232,0.0554,0.0046,0.0096,0.6388
+121,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0064,0.086,0.0074,0.0012,0.0278,0.0166,0.1094,0.0214,0.6766,0.008,0.0236,0.0156
+122,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0162,0.05,0.006,0.0078,0.0454,0.0346,0.071,0.03,0.057,0.0124,0.6486,0.021
+123,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0028,0.052,0.0028,0.002,0.0406,0.6482,0.1608,0.0174,0.0476,0.0042,0.0104,0.0112
+124,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0098,0.031,0.0142,0.0008,0.0226,0.0306,0.1392,0.0188,0.6858,0.0076,0.018,0.0216
+125,Organic acids and derivatives;,Organic acids and derivatives;,0.0066,0.0072,0.0288,0.004,0.0138,0.0136,0.8616,0.0144,0.0288,0.0126,0.004,0.0046
+126,Organic oxygen compounds;,Organic oxygen compounds;,0.0146,0.015,0.0552,0.0102,0.0276,0.0752,0.098,0.6594,0.0182,0.008,0.006,0.0126
+127,Fatty Acyls;,Fatty Acyls;,0.0246,0.0306,0.014,0.6794,0.1106,0.0042,0.0516,0.0282,0.0266,0.0248,0.0046,0.0008
+128,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0212,0.0262,0.0224,0.0132,0.0294,0.6788,0.1024,0.025,0.051,0.0138,0.0116,0.005
+129,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0092,0.0096,0.0066,0.0192,0.0462,0.0092,0.03,0.035,0.0344,0.0058,0.0038,0.791
+130,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.005,0.0142,0.037,0.0056,0.006,0.8304,0.0536,0.0228,0.011,0.0014,0.0028,0.0102
+131,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0002,0.0074,0.0376,0.0182,0.7046,0.0058,0.155,0.0428,0.006,0.0182,0.0032,0.001
+132,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0466,0.0252,0.026,0.0216,0.0364,0.0104,0.0582,0.0262,0.702,0.01,0.0278,0.0096
+133,Organic acids and derivatives;,Organic acids and derivatives;,0.0012,0.0072,0.0332,0.0032,0.0282,0.0084,0.857,0.0294,0.012,0.017,0.0024,0.0008
+134,Organic acids and derivatives;,Organic acids and derivatives;,0.0,0.002,0.0244,0.0292,0.1582,0.0014,0.726,0.0202,0.0074,0.0258,0.004,0.0014
+135,Organic acids and derivatives;,Organic acids and derivatives;,0.0012,0.004,0.0092,0.0002,0.0406,0.012,0.8644,0.0166,0.0188,0.0122,0.0068,0.014
+136,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0244,0.112,0.0046,0.0004,0.0184,0.0054,0.0722,0.031,0.6824,0.0052,0.0332,0.0108
+137,Organic acids and derivatives;,Organic acids and derivatives;,0.013,0.0578,0.0114,0.01,0.053,0.0024,0.7394,0.0358,0.0462,0.016,0.0108,0.0042
+138,Organic acids and derivatives;,Organic acids and derivatives;,0.0206,0.0234,0.029,0.0362,0.0478,0.0214,0.6968,0.0292,0.0492,0.0106,0.0116,0.0242
+139,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.009,0.0468,0.0088,0.0058,0.0622,0.0058,0.0594,0.0326,0.0462,0.0148,0.0118,0.6968
+140,Organic acids and derivatives;,Organic acids and derivatives;,0.0138,0.0638,0.0068,0.0046,0.0338,0.0328,0.7112,0.0312,0.0372,0.0148,0.0248,0.0252
+141,Organic acids and derivatives;,Organic acids and derivatives;,0.0242,0.0484,0.0092,0.0044,0.04,0.0268,0.6922,0.0378,0.0796,0.0046,0.0198,0.013
+142,Organic acids and derivatives;,Organic acids and derivatives;,0.0004,0.001,0.0074,0.0006,0.0382,0.0028,0.9124,0.0146,0.009,0.0094,0.0032,0.001
+143,Organooxygen compounds;,Organooxygen compounds;,0.0282,0.0196,0.039,0.0214,0.0366,0.0032,0.0506,0.0352,0.027,0.7284,0.009,0.0018
+144,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0002,0.0082,0.0188,0.0108,0.7494,0.019,0.1396,0.0316,0.0068,0.0084,0.0058,0.0014
+145,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0214,0.0398,0.027,0.0168,0.0368,0.024,0.1152,0.0136,0.026,0.0148,0.0096,0.655
+146,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.009,0.0112,0.0042,0.0176,0.0458,0.0036,0.0176,0.0142,0.0262,0.0038,0.0084,0.8384
+147,Organic acids and derivatives;,Organic acids and derivatives;,0.0106,0.0064,0.073,0.0246,0.0316,0.0094,0.7886,0.0198,0.0172,0.0138,0.0016,0.0034
+148,Organic acids and derivatives;,Organic acids and derivatives;,0.0096,0.0304,0.03,0.0046,0.0532,0.0156,0.7904,0.0198,0.0194,0.004,0.0092,0.0138
+149,Organic acids and derivatives;,Organic acids and derivatives;,0.0046,0.1146,0.0072,0.0028,0.0374,0.0156,0.7516,0.0112,0.033,0.0064,0.0114,0.0042
+150,Organic oxygen compounds;,Organic oxygen compounds;,0.0012,0.0036,0.021,0.0094,0.0838,0.029,0.0716,0.7022,0.0086,0.055,0.0082,0.0064
+151,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0062,0.0354,0.0028,0.006,0.0478,0.006,0.0356,0.0224,0.0248,0.0078,0.0128,0.7924
+152,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.003,0.0582,0.0018,0.0058,0.0362,0.7018,0.1236,0.0064,0.0312,0.0116,0.0102,0.0102
+153,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.01,0.0326,0.012,0.009,0.0536,0.0288,0.0608,0.0286,0.0774,0.0076,0.0164,0.6632
+154,Organic oxygen compounds;,Organic oxygen compounds;,0.0024,0.0034,0.017,0.0218,0.0414,0.0018,0.0854,0.6772,0.0248,0.1226,0.001,0.0012
+155,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0052,0.0156,0.0278,0.0044,0.011,0.8304,0.0468,0.0252,0.015,0.0014,0.0052,0.012
+156,Organic oxygen compounds;,Organic oxygen compounds;,0.0134,0.0212,0.0084,0.0196,0.0542,0.0224,0.0526,0.7164,0.0442,0.0124,0.0084,0.0268
+157,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0768,0.0984,0.0186,0.0072,0.0202,0.001,0.038,0.011,0.0504,0.0372,0.6396,0.0016
+158,Organooxygen compounds;,Organooxygen compounds;,0.005,0.0202,0.021,0.012,0.0772,0.0072,0.088,0.0674,0.0144,0.6756,0.0098,0.0022
+159,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0002,0.006,0.0068,0.002,0.6524,0.0652,0.2172,0.0244,0.0032,0.0032,0.0154,0.004
+160,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0098,0.035,0.008,0.0026,0.0478,0.0414,0.1062,0.033,0.691,0.0132,0.006,0.006
+161,Benzenoids;,Benzenoids;,0.0654,0.7204,0.0096,0.0092,0.049,0.007,0.0454,0.0114,0.0418,0.012,0.024,0.0048
+162,Organooxygen compounds;,Organooxygen compounds;,0.0036,0.0082,0.0044,0.0108,0.0524,0.0148,0.0428,0.1484,0.013,0.6914,0.0028,0.0074
+163,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0106,0.0208,0.004,0.0086,0.7318,0.0106,0.0358,0.0328,0.0608,0.0118,0.0158,0.0566
+164,Organic acids and derivatives;,Organic acids and derivatives;,0.0118,0.0372,0.024,0.01,0.0454,0.0138,0.7436,0.0276,0.0366,0.0302,0.0124,0.0074
+165,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.035,0.0922,0.0268,0.0026,0.0178,0.0176,0.0924,0.0246,0.0252,0.0082,0.6554,0.0022
+166,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0262,0.0546,0.008,0.0018,0.0234,0.0274,0.087,0.033,0.0538,0.0118,0.661,0.012
+167,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0176,0.0202,0.0324,0.0148,0.0274,0.719,0.077,0.025,0.0292,0.0038,0.0114,0.0222
+168,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0104,0.0164,0.033,0.02,0.7138,0.0102,0.0794,0.021,0.0624,0.0182,0.003,0.0122
+169,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6676,0.0712,0.0288,0.011,0.03,0.0198,0.054,0.0154,0.063,0.0194,0.0128,0.007
+170,Organic acids and derivatives;,Organic acids and derivatives;,0.0016,0.0056,0.084,0.0234,0.0876,0.008,0.752,0.0114,0.0154,0.0062,0.003,0.0018
+171,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0008,0.0034,0.646,0.0134,0.0706,0.004,0.1922,0.021,0.0318,0.014,0.0018,0.001
+172,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0166,0.0192,0.0172,0.0356,0.0532,0.0126,0.0666,0.031,0.7028,0.0116,0.014,0.0196
+173,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0012,0.0122,0.0188,0.0208,0.7412,0.0006,0.12,0.049,0.0062,0.0274,0.0016,0.001
+174,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0122,0.0522,0.0162,0.026,0.7102,0.0066,0.0708,0.03,0.0394,0.0156,0.013,0.0078
+175,Benzenoids;,Benzenoids;,0.024,0.7006,0.0074,0.0026,0.0352,0.0038,0.076,0.0448,0.0388,0.025,0.0372,0.0046
+176,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0098,0.0096,0.0058,0.0146,0.0374,0.0108,0.0222,0.024,0.047,0.0056,0.0054,0.8078
+177,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0058,0.0244,0.0064,0.0064,0.0258,0.0062,0.0468,0.0172,0.7922,0.0058,0.0118,0.0512
+178,Organic acids and derivatives;,Organic acids and derivatives;,0.014,0.0088,0.0322,0.0282,0.0592,0.0102,0.7376,0.0332,0.0372,0.0356,0.0032,0.0006
+179,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0102,0.016,0.6702,0.0202,0.0296,0.0124,0.1558,0.025,0.04,0.0088,0.0054,0.0064
+180,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0032,0.0134,0.6416,0.005,0.0526,0.0594,0.1592,0.021,0.0126,0.0052,0.0122,0.0146
+181,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0078,0.0036,0.0092,0.1506,0.702,0.0104,0.0428,0.0338,0.0214,0.0154,0.0016,0.0014
+182,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.004,0.0086,0.0176,0.0198,0.7052,0.0252,0.1382,0.0218,0.0218,0.0264,0.002,0.0094
+183,Organic acids and derivatives;,Organic acids and derivatives;,0.0018,0.002,0.0616,0.0068,0.0312,0.0036,0.7776,0.0184,0.019,0.0758,0.001,0.0012
+184,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0018,0.0124,0.0076,0.0052,0.0472,0.6816,0.1426,0.0234,0.0502,0.0186,0.004,0.0054
+185,Organooxygen compounds;,Organooxygen compounds;,0.01,0.016,0.0046,0.0048,0.0196,0.0022,0.019,0.1426,0.0098,0.7576,0.0116,0.0022
+186,Benzenoids;,Benzenoids;,0.0098,0.6412,0.0228,0.0204,0.0444,0.0166,0.1184,0.0508,0.0404,0.0098,0.0092,0.0162
+187,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0142,0.033,0.0272,0.0048,0.682,0.0146,0.0958,0.0358,0.0514,0.0194,0.011,0.0108
+188,Organic acids and derivatives;,Organic acids and derivatives;,0.0002,0.0022,0.0058,0.0148,0.0356,0.0168,0.8278,0.019,0.0622,0.0102,0.0024,0.003
+189,Benzenoids;,Benzenoids;,0.0964,0.7028,0.0086,0.0072,0.0228,0.0092,0.0442,0.016,0.0362,0.0274,0.0274,0.0018
+190,Organic oxygen compounds;,Organic oxygen compounds;,0.009,0.0182,0.0168,0.0128,0.0256,0.038,0.115,0.6828,0.042,0.0062,0.0176,0.016
+191,Organic acids and derivatives;,Organic acids and derivatives;,0.001,0.0044,0.0214,0.0016,0.0808,0.0216,0.767,0.0354,0.0096,0.0354,0.003,0.0188
+192,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.02,0.009,0.0154,0.0508,0.0294,0.029,0.049,0.022,0.027,0.0026,0.0062,0.7396
+193,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.017,0.0602,0.0114,0.0024,0.0232,0.0258,0.065,0.0312,0.0772,0.01,0.6632,0.0134
+194,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.7084,0.0838,0.0144,0.0172,0.0288,0.0038,0.0354,0.014,0.0404,0.0192,0.0324,0.0022
+195,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0166,0.0506,0.0182,0.0084,0.055,0.0296,0.0754,0.0366,0.6736,0.017,0.0134,0.0056
+196,Organic oxygen compounds;,Organic oxygen compounds;,0.002,0.0102,0.0166,0.0166,0.0556,0.008,0.103,0.7062,0.0234,0.0444,0.0076,0.0064
+197,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.688,0.1794,0.006,0.0106,0.035,0.0014,0.0182,0.0072,0.0308,0.0132,0.0084,0.0018
+198,Organic acids and derivatives;,Organic acids and derivatives;,0.0042,0.0102,0.0458,0.0022,0.014,0.0136,0.8382,0.0234,0.0158,0.0248,0.0044,0.0034
+199,Benzenoids;,Benzenoids;,0.0046,0.7366,0.0162,0.0014,0.0332,0.0062,0.1186,0.0144,0.0402,0.007,0.0192,0.0024
+200,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0052,0.008,0.0034,0.0082,0.033,0.004,0.0198,0.0152,0.0182,0.0044,0.0038,0.8768
+201,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0154,0.0264,0.0226,0.0114,0.0136,0.0248,0.1282,0.016,0.7246,0.0038,0.009,0.0042
+202,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0122,0.0254,0.0094,0.007,0.079,0.0174,0.0572,0.0368,0.6996,0.0138,0.027,0.0152
+203,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.015,0.0114,0.6634,0.0192,0.0468,0.062,0.0588,0.0432,0.025,0.0038,0.0076,0.0438
+204,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.007,0.0088,0.6334,0.0314,0.087,0.0154,0.0916,0.0418,0.0388,0.0304,0.0052,0.0092
+205,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.026,0.0216,0.0166,0.016,0.0254,0.6732,0.0828,0.0308,0.0682,0.008,0.0192,0.0122
+206,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0196,0.0118,0.6706,0.0218,0.0382,0.0166,0.1004,0.0278,0.0342,0.052,0.004,0.003
+207,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0068,0.0254,0.0186,0.0194,0.6982,0.0232,0.0798,0.0198,0.0514,0.0436,0.006,0.0078
+208,Fatty Acyls;,Fatty Acyls;,0.0122,0.0092,0.0074,0.7108,0.111,0.0106,0.0472,0.0448,0.0288,0.0118,0.0028,0.0034
+209,Benzenoids;,Benzenoids;,0.0308,0.7324,0.008,0.0008,0.0134,0.0164,0.0734,0.0402,0.0454,0.0034,0.0282,0.0076
+210,Fatty Acyls;,Fatty Acyls;,0.0128,0.0082,0.02,0.7322,0.072,0.0044,0.044,0.0342,0.036,0.0178,0.0046,0.0138
+211,Organic acids and derivatives;,Organic acids and derivatives;,0.0056,0.006,0.0188,0.0086,0.078,0.053,0.7466,0.0356,0.0084,0.0038,0.0126,0.023
+212,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0232,0.0488,0.0258,0.0032,0.0188,0.026,0.0936,0.0116,0.7056,0.0098,0.0302,0.0034
+213,Organooxygen compounds;,Organooxygen compounds;,0.0048,0.0038,0.028,0.0132,0.0278,0.0012,0.0624,0.0192,0.008,0.8308,0.0006,0.0002
+214,Organic acids and derivatives;,Organic acids and derivatives;,0.0336,0.043,0.016,0.0074,0.0352,0.0146,0.6978,0.0442,0.0454,0.0138,0.0286,0.0204
+215,Organic acids and derivatives;,Organic acids and derivatives;,0.0192,0.0268,0.0158,0.007,0.0248,0.039,0.7618,0.0326,0.035,0.01,0.0186,0.0094
+216,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0228,0.012,0.0116,0.0242,0.0904,0.0122,0.0282,0.0158,0.027,0.0072,0.009,0.7396
+217,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0002,0.0034,0.0186,0.0068,0.6936,0.015,0.1876,0.0492,0.003,0.017,0.0044,0.0012
+218,Organic acids and derivatives;,Organic acids and derivatives;,0.0026,0.0396,0.009,0.0028,0.0262,0.046,0.7696,0.018,0.0448,0.0104,0.0188,0.0122
+219,Benzenoids;,Benzenoids;,0.0106,0.803,0.002,0.0004,0.0168,0.0316,0.0804,0.0152,0.0164,0.0026,0.0186,0.0024
+220,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0202,0.0326,0.0222,0.0196,0.0282,0.6674,0.1042,0.025,0.05,0.009,0.0112,0.0104
+221,Organic acids and derivatives;,Organic acids and derivatives;,0.0298,0.0772,0.0132,0.0118,0.047,0.0188,0.6954,0.013,0.053,0.0126,0.0212,0.007
+222,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6738,0.1392,0.0072,0.002,0.0184,0.0138,0.0418,0.0144,0.056,0.0034,0.026,0.004
+223,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0154,0.021,0.035,0.0152,0.016,0.7388,0.0736,0.0316,0.0226,0.0044,0.0118,0.0146
+224,Organic acids and derivatives;,Organic acids and derivatives;,0.001,0.0234,0.0032,0.006,0.0494,0.0516,0.7766,0.007,0.0404,0.0148,0.0104,0.0162
+225,Organic oxygen compounds;,Organic oxygen compounds;,0.0006,0.0014,0.0336,0.0188,0.032,0.0012,0.0576,0.6648,0.0372,0.1526,0.0,0.0002
+226,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0084,0.0082,0.0058,0.017,0.0324,0.0064,0.028,0.025,0.0422,0.0054,0.0076,0.8136
+227,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0074,0.0166,0.005,0.0128,0.0694,0.0224,0.0538,0.03,0.0538,0.0098,0.0088,0.7102
+228,Organooxygen compounds;,Organooxygen compounds;,0.0144,0.0096,0.0504,0.021,0.046,0.0076,0.1194,0.045,0.0136,0.6642,0.0066,0.0022
+229,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0032,0.005,0.0116,0.1086,0.659,0.0358,0.0884,0.0262,0.0238,0.0276,0.0046,0.0062
+230,Organic acids and derivatives;,Organic acids and derivatives;,0.001,0.0036,0.054,0.0132,0.0462,0.0088,0.8304,0.0148,0.0096,0.0176,0.0004,0.0004
+231,Benzenoids;,Benzenoids;,0.0792,0.7688,0.01,0.0018,0.0226,0.0006,0.0468,0.0116,0.0216,0.0122,0.0246,0.0002
+232,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0028,0.0094,0.0068,0.032,0.7758,0.0276,0.042,0.0278,0.0222,0.0332,0.0026,0.0178
+233,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6736,0.066,0.0224,0.0104,0.0246,0.0102,0.0756,0.0158,0.0566,0.016,0.0256,0.0032
+234,Organic acids and derivatives;,Organic acids and derivatives;,0.004,0.0074,0.0286,0.0174,0.0348,0.0076,0.8292,0.0152,0.037,0.0112,0.003,0.0046
+235,Benzenoids;,Benzenoids;,0.0196,0.751,0.009,0.0008,0.0126,0.011,0.0928,0.0146,0.0356,0.0062,0.0396,0.0072
+236,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0034,0.0074,0.0144,0.0092,0.0886,0.6602,0.0886,0.035,0.0322,0.055,0.0032,0.0028
+237,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0152,0.0146,0.0062,0.0166,0.7562,0.018,0.0426,0.0298,0.0578,0.008,0.0124,0.0226
+238,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0088,0.0068,0.0318,0.0296,0.0716,0.0034,0.0862,0.0404,0.6668,0.052,0.0016,0.001
+239,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.661,0.0526,0.0186,0.031,0.065,0.0116,0.055,0.0304,0.0318,0.0278,0.0052,0.01
+240,Organic oxygen compounds;,Organic oxygen compounds;,0.0074,0.0158,0.037,0.0056,0.0328,0.0176,0.1244,0.673,0.0492,0.0182,0.0094,0.0096
+241,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6976,0.0466,0.0282,0.0126,0.02,0.0122,0.0842,0.0108,0.0552,0.0112,0.017,0.0044
+242,Fatty Acyls;,Fatty Acyls;,0.0016,0.0008,0.0426,0.6502,0.1022,0.0066,0.0894,0.0394,0.025,0.0414,0.0002,0.0006
+243,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0186,0.034,0.0158,0.0092,0.6844,0.0064,0.0632,0.0516,0.0538,0.029,0.0222,0.0118
+244,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.005,0.0102,0.0474,0.0252,0.7042,0.0052,0.091,0.0306,0.0254,0.0478,0.006,0.002
+245,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6634,0.084,0.0112,0.0042,0.0128,0.0088,0.0628,0.0232,0.0638,0.0108,0.0524,0.0026
+246,Organic acids and derivatives;,Organic acids and derivatives;,0.0024,0.012,0.0122,0.0022,0.0428,0.01,0.8026,0.0368,0.0338,0.0368,0.0046,0.0038
+247,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0326,0.0218,0.0134,0.0266,0.6764,0.0102,0.0274,0.0202,0.0378,0.004,0.0094,0.1202
+248,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0298,0.0396,0.017,0.0254,0.6784,0.0044,0.091,0.025,0.0598,0.0142,0.0114,0.004
+249,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0856,0.0866,0.0092,0.0066,0.0328,0.005,0.0442,0.0102,0.69,0.0062,0.0204,0.0032
+250,Organic acids and derivatives;,Organic acids and derivatives;,0.0012,0.0036,0.0198,0.0058,0.108,0.0064,0.7744,0.035,0.0056,0.0362,0.004,0.0
+251,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.009,0.0102,0.059,0.0066,0.0172,0.045,0.0894,0.0346,0.7058,0.0028,0.0058,0.0146
+252,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.02,0.0368,0.0098,0.018,0.706,0.0082,0.0572,0.0344,0.0554,0.0242,0.0114,0.0186
+253,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0148,0.0472,0.0088,0.006,0.0816,0.0104,0.0636,0.0142,0.716,0.0084,0.0066,0.0224
+254,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0108,0.0252,0.0166,0.0078,0.661,0.0148,0.1558,0.0178,0.062,0.0114,0.0104,0.0064
+255,Organic oxygen compounds;,Organic oxygen compounds;,0.0076,0.0184,0.0094,0.0016,0.024,0.0032,0.031,0.6664,0.013,0.2116,0.0112,0.0026
+256,Organic acids and derivatives;,Organic acids and derivatives;,0.001,0.006,0.0272,0.0084,0.0268,0.0194,0.8356,0.0098,0.0476,0.015,0.002,0.0012
+257,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.013,0.015,0.0234,0.034,0.0614,0.0142,0.0618,0.032,0.6692,0.021,0.0146,0.0404
+258,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0056,0.0158,0.0382,0.0044,0.0188,0.7838,0.0896,0.014,0.0138,0.0004,0.0052,0.0104
+259,Organic acids and derivatives;,Organic acids and derivatives;,0.0092,0.0154,0.0224,0.026,0.05,0.0236,0.7668,0.0348,0.0328,0.0104,0.004,0.0046
+260,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.022,0.0718,0.0128,0.0034,0.0238,0.0356,0.075,0.0246,0.061,0.006,0.654,0.01
+261,Organic acids and derivatives;,Organic acids and derivatives;,0.0096,0.0146,0.0614,0.0164,0.0302,0.0566,0.7452,0.0284,0.0228,0.0052,0.0032,0.0064
+262,Benzenoids;,Benzenoids;,0.0056,0.7916,0.0042,0.002,0.021,0.0598,0.0566,0.007,0.0214,0.0102,0.0104,0.0102
+263,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0002,0.0004,0.0024,0.0244,0.9294,0.0024,0.0194,0.0112,0.0014,0.0046,0.0004,0.0038
+264,Organic acids and derivatives;,Organic acids and derivatives;,0.002,0.0032,0.0102,0.0064,0.0478,0.0412,0.8268,0.0232,0.0224,0.0064,0.008,0.0024
+265,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.001,0.0008,0.0166,0.051,0.8642,0.0054,0.027,0.0128,0.004,0.0062,0.0046,0.0064
+266,Benzenoids;,Benzenoids;,0.0658,0.6924,0.0144,0.0198,0.034,0.016,0.0784,0.0114,0.0304,0.0212,0.0136,0.0026
+267,Organic acids and derivatives;,Organic acids and derivatives;,0.019,0.015,0.0232,0.0358,0.0312,0.051,0.7134,0.038,0.03,0.0052,0.0062,0.032
+268,Benzenoids;,Benzenoids;,0.0334,0.6578,0.0106,0.0106,0.046,0.0236,0.0668,0.0518,0.0454,0.0148,0.0214,0.0178
+269,Organooxygen compounds;,Organooxygen compounds;,0.0042,0.0054,0.0196,0.0148,0.053,0.0038,0.07,0.032,0.0134,0.7816,0.002,0.0002
+270,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0042,0.0046,0.7342,0.013,0.0204,0.0062,0.1628,0.0116,0.0178,0.0196,0.0044,0.0012
+271,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0042,0.0276,0.009,0.0068,0.0412,0.0034,0.0778,0.0196,0.7676,0.0056,0.0274,0.0098
+272,Fatty Acyls;,Fatty Acyls;,0.0156,0.0156,0.0128,0.6598,0.0242,0.0456,0.0774,0.0252,0.035,0.002,0.0058,0.081
+273,Fatty Acyls;,Fatty Acyls;,0.0178,0.0116,0.0372,0.676,0.0666,0.002,0.0606,0.0452,0.0424,0.034,0.003,0.0036
+274,Organic acids and derivatives;,Organic acids and derivatives;,0.0158,0.0204,0.0092,0.0136,0.068,0.0384,0.6882,0.033,0.0692,0.0204,0.0086,0.0152
+275,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0028,0.0092,0.6616,0.009,0.0256,0.0066,0.2144,0.0176,0.0314,0.0156,0.0054,0.0008
+276,Organic acids and derivatives;,Organic acids and derivatives;,0.0202,0.1232,0.0082,0.0034,0.0312,0.0244,0.6768,0.007,0.0754,0.0058,0.0196,0.0048
+277,Organooxygen compounds;,Organooxygen compounds;,0.0038,0.07,0.0122,0.004,0.032,0.0282,0.0972,0.0474,0.0444,0.6398,0.0102,0.0108
+278,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.006,0.061,0.0076,0.0026,0.665,0.0454,0.1084,0.009,0.0592,0.0084,0.0138,0.0136
+279,Organooxygen compounds;,Organooxygen compounds;,0.0068,0.015,0.0084,0.0062,0.0212,0.0024,0.0316,0.1092,0.0088,0.7762,0.0098,0.0044
+280,Organic oxygen compounds;,Organic oxygen compounds;,0.002,0.0138,0.0102,0.0016,0.0452,0.0102,0.1352,0.715,0.0246,0.0304,0.0078,0.004
+281,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.003,0.0246,0.0064,0.0068,0.04,0.6962,0.1684,0.025,0.0144,0.0026,0.0074,0.0052
+282,Organooxygen compounds;,Organooxygen compounds;,0.0012,0.0018,0.0208,0.015,0.0192,0.0,0.0398,0.0352,0.0214,0.8456,0.0,0.0
+283,Organic oxygen compounds;,Organic oxygen compounds;,0.0052,0.0068,0.013,0.0044,0.0866,0.0138,0.13,0.6578,0.0108,0.0668,0.0044,0.0004
+284,Organic acids and derivatives;,Organic acids and derivatives;,0.0084,0.0266,0.0048,0.0148,0.0388,0.0602,0.7232,0.0298,0.07,0.008,0.007,0.0084
+285,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0028,0.0024,0.0362,0.0376,0.034,0.002,0.0382,0.0896,0.6444,0.1126,0.0002,0.0
+286,Organic acids and derivatives;,Organic acids and derivatives;,0.004,0.0084,0.0108,0.0082,0.0712,0.0122,0.7652,0.0474,0.0226,0.0424,0.0052,0.0024
+287,Organic acids and derivatives;,Organic acids and derivatives;,0.0332,0.027,0.0668,0.0092,0.0182,0.0556,0.6908,0.0238,0.037,0.0038,0.016,0.0186
+288,Benzenoids;,Benzenoids;,0.0678,0.725,0.0162,0.009,0.0244,0.0066,0.0416,0.013,0.0412,0.0422,0.0112,0.0018
+289,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6604,0.0288,0.0068,0.0236,0.0932,0.0144,0.0484,0.033,0.0518,0.0206,0.0122,0.0068
+290,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0132,0.0296,0.0056,0.0028,0.0716,0.0172,0.0308,0.0222,0.7388,0.0026,0.0302,0.0354
+291,Organic oxygen compounds;,Organic oxygen compounds;,0.0094,0.0054,0.0112,0.0822,0.086,0.0008,0.0312,0.711,0.0282,0.0316,0.0016,0.0014
+292,Benzenoids;,Benzenoids;,0.0798,0.819,0.0032,0.0048,0.0234,0.0022,0.015,0.004,0.0316,0.007,0.009,0.001
+293,Organic acids and derivatives;,Organic acids and derivatives;,0.0042,0.007,0.0296,0.0206,0.0602,0.0128,0.7426,0.0326,0.036,0.0486,0.0002,0.0056
+294,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0084,0.022,0.0258,0.006,0.0688,0.676,0.0736,0.0328,0.0296,0.0058,0.0204,0.0308
+295,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0072,0.0026,0.0212,0.1116,0.707,0.003,0.0372,0.0418,0.0276,0.0314,0.0028,0.0066
+296,Organic acids and derivatives;,Organic acids and derivatives;,0.0032,0.0134,0.02,0.0106,0.0654,0.0044,0.749,0.0762,0.0206,0.0198,0.008,0.0094
+297,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0086,0.0182,0.0072,0.0172,0.0654,0.0226,0.0418,0.0412,0.6898,0.015,0.0206,0.0524
+298,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0032,0.0046,0.0274,0.024,0.733,0.0092,0.137,0.0176,0.0184,0.0222,0.0008,0.0026
+299,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0032,0.0412,0.0082,0.001,0.6858,0.0532,0.1356,0.019,0.0138,0.013,0.009,0.017
+300,Organic acids and derivatives;,Organic acids and derivatives;,0.01,0.0114,0.0318,0.0346,0.0568,0.0088,0.7538,0.0396,0.0282,0.0136,0.005,0.0064
+301,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0016,0.0184,0.0048,0.0046,0.0198,0.184,0.0922,0.0086,0.0114,0.0018,0.0078,0.645
+302,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.003,0.0126,0.0112,0.014,0.0424,0.0412,0.1966,0.0234,0.0162,0.0006,0.633,0.0058
+303,Organooxygen compounds;,Organooxygen compounds;,0.0046,0.0096,0.0354,0.0134,0.0428,0.0142,0.1106,0.026,0.028,0.7134,0.0008,0.0012
+304,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0042,0.0196,0.0072,0.002,0.0606,0.0152,0.1018,0.0442,0.0688,0.0168,0.6496,0.01
+305,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0096,0.0074,0.0046,0.0188,0.033,0.0094,0.0216,0.0226,0.0294,0.0026,0.0042,0.8368
+306,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0,0.0092,0.0064,0.0026,0.054,0.6732,0.2246,0.0086,0.0036,0.0014,0.0134,0.003
+307,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0042,0.021,0.0062,0.0024,0.6724,0.0766,0.1808,0.016,0.0034,0.0006,0.0132,0.0032
+308,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0052,0.005,0.0102,0.0658,0.7756,0.0038,0.0532,0.0218,0.0206,0.0348,0.0018,0.0022
+309,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0014,0.0042,0.0056,0.0388,0.827,0.0094,0.048,0.0294,0.0082,0.0162,0.0034,0.0084
+310,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0048,0.0452,0.0218,0.0044,0.7464,0.0108,0.0764,0.0382,0.0086,0.026,0.012,0.0054
+311,Organic oxygen compounds;,Organic oxygen compounds;,0.0044,0.0022,0.0034,0.0102,0.0352,0.024,0.0734,0.801,0.0254,0.0104,0.0046,0.0058
+312,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0206,0.1206,0.6284,0.0024,0.0158,0.0126,0.0644,0.0198,0.0612,0.0068,0.0296,0.0178
+313,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0,0.0012,0.0116,0.046,0.8744,0.0044,0.0414,0.0068,0.004,0.0068,0.002,0.0014
+314,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0016,0.0076,0.0106,0.0118,0.0656,0.0116,0.1122,0.0672,0.6626,0.0396,0.0018,0.0078
+315,Organic acids and derivatives;,Organic acids and derivatives;,0.0044,0.0022,0.0444,0.0076,0.026,0.0118,0.8544,0.011,0.018,0.016,0.0008,0.0034
+316,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0074,0.0306,0.0128,0.0146,0.712,0.0094,0.104,0.0246,0.0336,0.0364,0.0032,0.0114
+317,Organic oxygen compounds;,Organic oxygen compounds;,0.0062,0.0208,0.0078,0.0076,0.0452,0.0132,0.064,0.7318,0.02,0.0176,0.0292,0.0366
+318,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0322,0.0626,0.0116,0.0046,0.0284,0.0432,0.0698,0.0208,0.6854,0.0074,0.026,0.008
+319,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0002,0.0028,0.666,0.0118,0.0348,0.0034,0.2562,0.0072,0.005,0.0106,0.0014,0.0006
+320,Organic acids and derivatives;,Organic acids and derivatives;,0.0078,0.0048,0.0754,0.0184,0.0192,0.0412,0.7624,0.0316,0.022,0.005,0.0028,0.0094
+321,Benzenoids;,Benzenoids;,0.008,0.751,0.0086,0.002,0.0484,0.0036,0.0754,0.058,0.0192,0.0098,0.0124,0.0036
+322,Benzenoids;,Benzenoids;,0.0078,0.7118,0.003,0.0036,0.028,0.0916,0.0842,0.0072,0.0394,0.0058,0.0104,0.0072
+323,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0144,0.0054,0.7326,0.0068,0.02,0.006,0.1564,0.012,0.0168,0.0242,0.003,0.0024
+324,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6468,0.1166,0.016,0.003,0.0214,0.0168,0.0768,0.0112,0.04,0.01,0.0314,0.01
+325,Organic acids and derivatives;,Organic acids and derivatives;,0.0062,0.0088,0.0518,0.015,0.026,0.0496,0.7632,0.0186,0.044,0.0074,0.0036,0.0058
+326,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.057,0.0366,0.0168,0.0238,0.0364,0.012,0.059,0.0166,0.0776,0.0098,0.6506,0.0038
+327,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.011,0.007,0.6454,0.025,0.0326,0.0082,0.1856,0.0188,0.0436,0.0136,0.0066,0.0026
+328,Organic acids and derivatives;,Organic acids and derivatives;,0.0038,0.0386,0.0234,0.0028,0.064,0.005,0.7478,0.063,0.0138,0.0278,0.0056,0.0044
+329,Organic oxygen compounds;,Organic oxygen compounds;,0.0058,0.0238,0.016,0.0106,0.058,0.0182,0.15,0.6478,0.0378,0.0092,0.007,0.0158
+330,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0102,0.0222,0.0138,0.0136,0.7354,0.0396,0.0756,0.023,0.0306,0.014,0.0046,0.0174
+331,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6898,0.1702,0.0212,0.0026,0.0102,0.0098,0.0396,0.0096,0.0188,0.0104,0.0162,0.0016
+332,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0144,0.0178,0.0174,0.0136,0.0426,0.0626,0.0564,0.0414,0.0222,0.0132,0.0096,0.6888
+333,Organic acids and derivatives;,Organic acids and derivatives;,0.0012,0.0084,0.0284,0.0018,0.019,0.0156,0.862,0.0234,0.0104,0.0154,0.0068,0.0076
+334,Organooxygen compounds;,Organooxygen compounds;,0.002,0.0026,0.032,0.019,0.0172,0.0004,0.0358,0.014,0.0266,0.8498,0.0006,0.0
+335,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0082,0.0348,0.017,0.008,0.059,0.0144,0.084,0.041,0.6864,0.01,0.0204,0.0168
+336,Organic acids and derivatives;,Organic acids and derivatives;,0.0002,0.0032,0.013,0.0008,0.0598,0.0062,0.8742,0.022,0.0074,0.0086,0.0034,0.0012
+337,Organic oxygen compounds;,Organic oxygen compounds;,0.0022,0.0044,0.0044,0.0108,0.0552,0.011,0.0276,0.6818,0.0154,0.1834,0.0016,0.0022
+338,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.013,0.0106,0.0108,0.0202,0.7322,0.0168,0.0538,0.0516,0.0436,0.0156,0.009,0.0228
+339,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0118,0.0224,0.0252,0.0044,0.682,0.0268,0.0984,0.0248,0.0474,0.0096,0.0048,0.0424
+340,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0044,0.027,0.0108,0.0036,0.034,0.0036,0.0708,0.033,0.7622,0.0108,0.0308,0.009
+341,Organooxygen compounds;,Organooxygen compounds;,0.016,0.0224,0.0162,0.0248,0.0374,0.0132,0.1122,0.0368,0.0634,0.6432,0.0058,0.0086
+342,Organooxygen compounds;,Organooxygen compounds;,0.004,0.0224,0.0102,0.0018,0.0194,0.0152,0.1142,0.118,0.032,0.6436,0.0122,0.007
+343,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0046,0.007,0.0174,0.0262,0.0592,0.0152,0.0554,0.0386,0.7474,0.0198,0.005,0.0042
+344,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0582,0.0586,0.0084,0.0332,0.6844,0.003,0.0254,0.0314,0.0452,0.0244,0.0174,0.0104
+345,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0066,0.0074,0.6886,0.0136,0.0216,0.105,0.0842,0.032,0.0266,0.0034,0.002,0.009
+346,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0122,0.0108,0.006,0.0206,0.791,0.0102,0.0434,0.024,0.0458,0.0134,0.0054,0.0172
+347,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6588,0.1134,0.0136,0.003,0.0224,0.007,0.0866,0.0168,0.0358,0.012,0.0272,0.0034
+348,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0102,0.0602,0.0122,0.0022,0.0438,0.014,0.0982,0.038,0.0478,0.0068,0.0158,0.6508
+349,Organic acids and derivatives;,Organic acids and derivatives;,0.0012,0.015,0.0296,0.0048,0.0398,0.0058,0.8338,0.0306,0.0228,0.008,0.002,0.0066
+350,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0004,0.0062,0.0008,0.0118,0.024,0.8052,0.084,0.033,0.0106,0.0038,0.0012,0.019
+351,Organic oxygen compounds;,Organic oxygen compounds;,0.0092,0.0274,0.0236,0.0068,0.0468,0.0254,0.0794,0.67,0.0432,0.0084,0.0272,0.0326
+352,Organic acids and derivatives;,Organic acids and derivatives;,0.0034,0.0048,0.028,0.0148,0.0428,0.0142,0.792,0.0156,0.038,0.0324,0.0122,0.0018
+353,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.017,0.048,0.0112,0.0068,0.0232,0.7118,0.0876,0.0182,0.0394,0.0054,0.0104,0.021
+354,Fatty Acyls;,Fatty Acyls;,0.0064,0.0084,0.0278,0.6634,0.0806,0.0202,0.1164,0.0308,0.0152,0.0268,0.0022,0.0018
+355,Benzenoids;,Benzenoids;,0.0072,0.8342,0.0048,0.0008,0.0156,0.0094,0.0802,0.0112,0.0162,0.0044,0.0128,0.0032
+356,Organic acids and derivatives;,Organic acids and derivatives;,0.0024,0.0074,0.0026,0.017,0.0654,0.0202,0.7676,0.008,0.0738,0.0014,0.0266,0.0076
+357,Organic acids and derivatives;,Organic acids and derivatives;,0.0018,0.0432,0.0076,0.0018,0.0314,0.012,0.8,0.0146,0.0516,0.0038,0.0248,0.0074
+358,Organic acids and derivatives;,Organic acids and derivatives;,0.0098,0.0302,0.0192,0.013,0.0514,0.0278,0.7388,0.0236,0.0378,0.0276,0.0042,0.0166
+359,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0006,0.0036,0.0124,0.0102,0.711,0.0268,0.1382,0.0316,0.0236,0.0334,0.0042,0.0044
+360,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0416,0.0692,0.0086,0.0052,0.035,0.0106,0.0404,0.017,0.0792,0.0082,0.6742,0.0108
+361,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.65,0.096,0.0096,0.0038,0.018,0.0156,0.0648,0.0226,0.053,0.0076,0.05,0.009
+362,Organic acids and derivatives;,Organic acids and derivatives;,0.002,0.0092,0.0282,0.0054,0.0482,0.04,0.8182,0.014,0.011,0.002,0.0176,0.0042
+363,Organic acids and derivatives;,Organic acids and derivatives;,0.013,0.0216,0.014,0.0152,0.0504,0.0418,0.7416,0.0296,0.044,0.0102,0.01,0.0086
+364,Organic acids and derivatives;,Organic acids and derivatives;,0.0004,0.0102,0.006,0.0034,0.0506,0.0536,0.814,0.0134,0.033,0.0006,0.0096,0.0052
+365,Organooxygen compounds;,Organooxygen compounds;,0.004,0.0024,0.0516,0.0152,0.018,0.0008,0.04,0.0164,0.0058,0.8452,0.0004,0.0002
+366,Organic acids and derivatives;,Organic acids and derivatives;,0.0136,0.0266,0.012,0.01,0.079,0.0082,0.7126,0.048,0.034,0.0268,0.01,0.0192
+367,Organooxygen compounds;,Organooxygen compounds;,0.0084,0.0058,0.0478,0.0286,0.051,0.0098,0.0736,0.0282,0.0322,0.7126,0.0016,0.0004
+368,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0074,0.01,0.685,0.0186,0.031,0.0716,0.1066,0.0252,0.022,0.0094,0.0032,0.01
+369,Organic acids and derivatives;,Organic acids and derivatives;,0.0272,0.0502,0.015,0.0092,0.0268,0.0172,0.74,0.0188,0.061,0.0052,0.0156,0.0138
+370,Organic acids and derivatives;,Organic acids and derivatives;,0.0062,0.034,0.0076,0.0016,0.0184,0.0412,0.7828,0.0328,0.027,0.0246,0.015,0.0088
+371,Organic acids and derivatives;,Organic acids and derivatives;,0.0112,0.0496,0.0056,0.0038,0.0486,0.0294,0.6926,0.0236,0.0558,0.0106,0.0252,0.044
+372,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0026,0.0012,0.031,0.0086,0.0228,0.0108,0.2234,0.0222,0.6556,0.0198,0.0004,0.0016
+373,Organic oxygen compounds;,Organic oxygen compounds;,0.0146,0.0224,0.011,0.0144,0.0702,0.0188,0.0582,0.6676,0.0558,0.011,0.0192,0.0368
+374,Organic oxygen compounds;,Organic oxygen compounds;,0.0044,0.0094,0.0204,0.0104,0.034,0.1074,0.078,0.6884,0.0244,0.0082,0.0052,0.0098
+375,Organic acids and derivatives;,Organic acids and derivatives;,0.0002,0.0032,0.0118,0.0066,0.068,0.0156,0.833,0.0256,0.01,0.0206,0.0036,0.0018
+376,Benzenoids;,Benzenoids;,0.0146,0.6558,0.0068,0.0036,0.043,0.0112,0.079,0.0324,0.0784,0.0068,0.0316,0.0368
+377,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0236,0.075,0.012,0.0026,0.6692,0.0114,0.0642,0.014,0.0946,0.0052,0.0208,0.0074
+378,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0154,0.0094,0.7202,0.014,0.0288,0.0368,0.0892,0.0294,0.026,0.0196,0.0034,0.0078
+379,Organic oxygen compounds;,Organic oxygen compounds;,0.0154,0.0804,0.0114,0.0006,0.0154,0.0004,0.118,0.6466,0.0666,0.0118,0.0196,0.0138
+380,Benzenoids;,Benzenoids;,0.0052,0.7312,0.0032,0.001,0.0306,0.0082,0.1238,0.0092,0.0174,0.0064,0.0592,0.0046
+381,Organic oxygen compounds;,Organic oxygen compounds;,0.0106,0.003,0.0078,0.1022,0.1048,0.0028,0.0202,0.7146,0.0212,0.0088,0.0026,0.0014
+382,Fatty Acyls;,Fatty Acyls;,0.0098,0.0082,0.0184,0.6778,0.0642,0.0018,0.0788,0.041,0.037,0.061,0.0014,0.0006
+383,Organooxygen compounds;,Organooxygen compounds;,0.002,0.0028,0.0322,0.0128,0.0246,0.0026,0.1056,0.0434,0.0144,0.7578,0.0018,0.0
+384,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0108,0.0052,0.087,0.0202,0.656,0.054,0.072,0.0452,0.017,0.008,0.0052,0.0194
+385,Organic acids and derivatives;,Organic acids and derivatives;,0.0014,0.0044,0.0248,0.0014,0.0078,0.0118,0.8968,0.0154,0.0188,0.0088,0.0052,0.0034
+386,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0254,0.01,0.015,0.0328,0.673,0.0092,0.0284,0.014,0.0264,0.007,0.0094,0.1494
+387,Organooxygen compounds;,Organooxygen compounds;,0.0008,0.0108,0.0056,0.003,0.0682,0.031,0.1032,0.0986,0.0216,0.645,0.0074,0.0048
+388,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0112,0.0442,0.0072,0.002,0.0176,0.0044,0.0814,0.0198,0.7666,0.005,0.0318,0.0088
+389,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0192,0.0342,0.0082,0.0118,0.6852,0.0064,0.053,0.0378,0.0616,0.019,0.0204,0.0432
+390,Organooxygen compounds;,Organooxygen compounds;,0.002,0.0068,0.009,0.0374,0.141,0.0128,0.0972,0.0098,0.0408,0.6354,0.004,0.0038
+391,Organic acids and derivatives;,Organic acids and derivatives;,0.0054,0.0104,0.0286,0.0162,0.026,0.0142,0.8152,0.029,0.039,0.0106,0.0028,0.0026
+392,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0,0.0086,0.0046,0.0022,0.0538,0.0514,0.2326,0.0088,0.0026,0.0002,0.6326,0.0026
+393,Fatty Acyls;,Fatty Acyls;,0.0012,0.0066,0.005,0.6266,0.0502,0.061,0.1988,0.0088,0.016,0.002,0.0184,0.0054
+394,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0006,0.005,0.0128,0.0086,0.6988,0.0258,0.1534,0.043,0.014,0.0272,0.0056,0.0052
+395,Organic acids and derivatives;,Organic acids and derivatives;,0.0196,0.0744,0.0086,0.0058,0.034,0.03,0.721,0.0156,0.0492,0.0154,0.02,0.0064
+396,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.016,0.019,0.0086,0.0118,0.068,0.02,0.0504,0.0336,0.0436,0.0094,0.0094,0.7102
+397,Organooxygen compounds;,Organooxygen compounds;,0.0016,0.0052,0.0092,0.0052,0.0322,0.013,0.0486,0.1806,0.015,0.6782,0.0054,0.0058
+398,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0082,0.0288,0.0028,0.0034,0.029,0.7552,0.0896,0.0116,0.036,0.0042,0.0102,0.021
+399,Organic oxygen compounds;,Organic oxygen compounds;,0.0114,0.0168,0.0108,0.0104,0.0546,0.0232,0.0562,0.6984,0.0354,0.011,0.015,0.0568
+400,Organic acids and derivatives;,Organic acids and derivatives;,0.0154,0.0148,0.0266,0.0342,0.0532,0.0106,0.7458,0.0236,0.0476,0.0192,0.0058,0.0032
+401,Organic oxygen compounds;,Organic oxygen compounds;,0.0046,0.0244,0.0038,0.0022,0.0298,0.0114,0.0796,0.6872,0.015,0.113,0.0208,0.0082
+402,Benzenoids;,Benzenoids;,0.0254,0.6724,0.0124,0.0022,0.0292,0.0176,0.0838,0.034,0.052,0.0072,0.0362,0.0276
+403,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0076,0.032,0.0096,0.0126,0.6778,0.0174,0.0742,0.035,0.0578,0.0112,0.0236,0.0412
+404,Organic acids and derivatives;,Organic acids and derivatives;,0.0104,0.0096,0.012,0.0064,0.0786,0.0056,0.7622,0.0328,0.0354,0.0118,0.0236,0.0116
+405,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0174,0.0116,0.7164,0.0208,0.0358,0.014,0.0906,0.0126,0.0394,0.0366,0.0036,0.0012
+406,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6484,0.0174,0.016,0.0298,0.0264,0.0654,0.0578,0.036,0.0348,0.0016,0.0102,0.0562
+407,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0088,0.053,0.0044,0.0068,0.0606,0.0512,0.0758,0.0156,0.6838,0.0148,0.0052,0.02
+408,Organic acids and derivatives;,Organic acids and derivatives;,0.0262,0.0296,0.0164,0.0068,0.0116,0.0402,0.7686,0.0332,0.0448,0.0042,0.013,0.0054
+409,Organic acids and derivatives;,Organic acids and derivatives;,0.0038,0.0182,0.0164,0.01,0.0384,0.0994,0.7334,0.0204,0.0192,0.0176,0.0102,0.013
+410,Fatty Acyls;,Fatty Acyls;,0.02,0.0104,0.0166,0.664,0.0624,0.023,0.0602,0.0396,0.0404,0.0104,0.0082,0.0448
+411,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0004,0.0074,0.013,0.0018,0.0486,0.0586,0.1996,0.012,0.644,0.001,0.0112,0.0024
+412,Organic acids and derivatives;,Organic acids and derivatives;,0.0152,0.0338,0.0496,0.0072,0.0132,0.132,0.669,0.0198,0.0276,0.0032,0.0116,0.0178
+413,Organic acids and derivatives;,Organic acids and derivatives;,0.0266,0.0262,0.0186,0.0192,0.0208,0.0526,0.707,0.0316,0.0562,0.0036,0.0158,0.0218
+414,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.017,0.014,0.6746,0.027,0.0426,0.0016,0.064,0.0186,0.0222,0.1158,0.0016,0.001
+415,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0014,0.0078,0.029,0.0122,0.7654,0.0134,0.0812,0.0206,0.03,0.0172,0.012,0.0098
+416,Benzenoids;,Benzenoids;,0.044,0.7064,0.008,0.0084,0.0294,0.0256,0.0794,0.017,0.0476,0.0074,0.0224,0.0044
+417,Fatty Acyls;,Fatty Acyls;,0.0046,0.0038,0.0124,0.6708,0.1086,0.0024,0.0536,0.0658,0.0246,0.0508,0.0016,0.001
+418,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0184,0.0208,0.0178,0.02,0.0382,0.0136,0.0718,0.028,0.724,0.0114,0.0254,0.0106
+419,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.003,0.0142,0.0052,0.0136,0.0312,0.0128,0.1868,0.0318,0.6684,0.0116,0.0174,0.004
+420,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0166,0.0182,0.0146,0.0236,0.043,0.0112,0.0298,0.0146,0.0458,0.0052,0.0088,0.7686
+421,Organooxygen compounds;,Organooxygen compounds;,0.0078,0.0088,0.0348,0.0256,0.0306,0.0008,0.0354,0.0734,0.0334,0.747,0.0018,0.0006
+422,Benzenoids;,Benzenoids;,0.0206,0.6814,0.01,0.0006,0.028,0.0254,0.0748,0.0186,0.0896,0.0084,0.0234,0.0192
+423,Organooxygen compounds;,Organooxygen compounds;,0.0018,0.0032,0.005,0.011,0.055,0.0112,0.026,0.2084,0.014,0.66,0.002,0.0024
+424,Organic acids and derivatives;,Organic acids and derivatives;,0.0338,0.028,0.0682,0.0142,0.025,0.0038,0.6734,0.0186,0.0238,0.0956,0.015,0.0006
+425,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0224,0.0664,0.0074,0.0022,0.0152,0.0158,0.1214,0.0234,0.0524,0.0072,0.6588,0.0074
+426,Organooxygen compounds;,Organooxygen compounds;,0.0028,0.0044,0.0048,0.0098,0.097,0.0314,0.0404,0.096,0.019,0.6864,0.0014,0.0066
+427,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0136,0.1482,0.0114,0.0006,0.016,0.0126,0.066,0.0404,0.0252,0.01,0.643,0.013
+428,Organooxygen compounds;,Organooxygen compounds;,0.0164,0.0134,0.0204,0.0282,0.0552,0.0146,0.0612,0.0456,0.0624,0.6446,0.013,0.025
+429,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0014,0.0028,0.0094,0.0252,0.829,0.0158,0.0358,0.036,0.0104,0.0142,0.0034,0.0166
+430,Organic acids and derivatives;,Organic acids and derivatives;,0.0002,0.0128,0.011,0.003,0.0324,0.0668,0.8434,0.0072,0.0078,0.0046,0.0078,0.003
+431,Organic acids and derivatives;,Organic acids and derivatives;,0.0036,0.0584,0.0036,0.0014,0.1288,0.0168,0.6874,0.0158,0.0394,0.0272,0.0104,0.0072
+432,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0002,0.01,0.0098,0.0054,0.7232,0.0404,0.1112,0.0298,0.0426,0.0156,0.0014,0.0104
+433,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0018,0.0032,0.6572,0.0064,0.0368,0.0054,0.2146,0.0308,0.0124,0.0234,0.0062,0.0018
+434,Organooxygen compounds;,Organooxygen compounds;,0.0274,0.0326,0.0474,0.0172,0.0456,0.0052,0.0502,0.0208,0.0232,0.7206,0.0066,0.0032
+435,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0172,0.1324,0.0092,0.0004,0.0122,0.0114,0.0812,0.0112,0.0616,0.0038,0.6518,0.0076
+436,Organooxygen compounds;,Organooxygen compounds;,0.0098,0.0498,0.019,0.0064,0.0396,0.0096,0.115,0.0226,0.0472,0.6648,0.0124,0.0038
+437,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.001,0.0246,0.0066,0.024,0.0682,0.0284,0.1214,0.0098,0.6844,0.024,0.0038,0.0038
+438,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0098,0.0146,0.0158,0.0256,0.7524,0.0128,0.0604,0.0204,0.0552,0.0158,0.005,0.0122
+439,Organic oxygen compounds;,Organic oxygen compounds;,0.0024,0.0104,0.0028,0.0036,0.0416,0.0098,0.0252,0.8054,0.0068,0.081,0.0048,0.0062
+440,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0012,0.0112,0.0028,0.008,0.0652,0.712,0.1366,0.004,0.0314,0.0072,0.0082,0.0122
+441,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6476,0.0202,0.009,0.0062,0.0402,0.0144,0.0888,0.0512,0.057,0.0096,0.0226,0.0332
+442,Organooxygen compounds;,Organooxygen compounds;,0.0042,0.0034,0.0198,0.0234,0.0716,0.001,0.0558,0.0398,0.015,0.765,0.0,0.001
+443,Organic acids and derivatives;,Organic acids and derivatives;,0.0044,0.0472,0.015,0.0038,0.0302,0.0214,0.786,0.0374,0.0256,0.0144,0.013,0.0016
+444,Organic acids and derivatives;,Organic acids and derivatives;,0.0006,0.0066,0.0638,0.0076,0.0264,0.0046,0.848,0.0106,0.0232,0.0054,0.0022,0.001
+445,Organic acids and derivatives;,Organic acids and derivatives;,0.0026,0.0286,0.0086,0.0022,0.034,0.0374,0.814,0.0208,0.0198,0.0156,0.0144,0.002
+446,Organic oxygen compounds;,Organic oxygen compounds;,0.0124,0.0068,0.0332,0.0208,0.0274,0.0544,0.09,0.6812,0.032,0.0214,0.0038,0.0166
+447,Organic oxygen compounds;,Organic oxygen compounds;,0.0138,0.0106,0.0262,0.0292,0.0346,0.0344,0.1058,0.681,0.0318,0.0088,0.005,0.0188
+448,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0166,0.1726,0.0056,0.0008,0.0252,0.0124,0.0506,0.0144,0.0296,0.0018,0.6584,0.012
+449,Organic oxygen compounds;,Organic oxygen compounds;,0.0006,0.0034,0.0128,0.0194,0.0678,0.0354,0.0612,0.7094,0.025,0.0524,0.0046,0.008
+450,Organic acids and derivatives;,Organic acids and derivatives;,0.0022,0.0018,0.0442,0.0132,0.0514,0.0114,0.815,0.0158,0.0188,0.0226,0.0012,0.0024
+451,Organic oxygen compounds;,Organic oxygen compounds;,0.0088,0.0682,0.0064,0.0006,0.0148,0.0094,0.1128,0.6706,0.0288,0.058,0.0136,0.008
+452,Organic oxygen compounds;,Organic oxygen compounds;,0.0022,0.0034,0.0014,0.0066,0.0422,0.0152,0.0224,0.7498,0.0138,0.1324,0.002,0.0086
+453,Organic acids and derivatives;,Organic acids and derivatives;,0.0004,0.0056,0.0292,0.0046,0.0278,0.018,0.8698,0.0182,0.0108,0.0024,0.0044,0.0088
+454,Organooxygen compounds;,Organooxygen compounds;,0.003,0.0058,0.0058,0.0084,0.0494,0.0126,0.0352,0.173,0.014,0.6844,0.003,0.0054
+455,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0398,0.0756,0.0138,0.0076,0.0294,0.015,0.0746,0.0164,0.6992,0.0024,0.0194,0.0068
+456,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.6876,0.0976,0.0244,0.0056,0.02,0.0064,0.0798,0.0132,0.0276,0.0142,0.0188,0.0048
+457,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0002,0.009,0.6392,0.0222,0.1036,0.0048,0.1636,0.0202,0.019,0.0122,0.0036,0.0024
+458,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.011,0.0346,0.0098,0.0092,0.6786,0.0422,0.075,0.0358,0.0404,0.0064,0.0156,0.0414
+459,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0048,0.0108,0.0034,0.007,0.0334,0.8158,0.0676,0.0108,0.0296,0.0052,0.005,0.0066
+460,Organic acids and derivatives;,Organic acids and derivatives;,0.0138,0.0318,0.011,0.0116,0.0318,0.019,0.7394,0.036,0.0502,0.0098,0.0176,0.028
+461,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0136,0.0148,0.0454,0.011,0.0146,0.7246,0.0962,0.0268,0.0312,0.0026,0.005,0.0142
+462,Benzenoids;,Benzenoids;,0.006,0.805,0.0122,0.0008,0.031,0.0176,0.06,0.029,0.006,0.0046,0.0208,0.007
+463,Organic acids and derivatives;,Organic acids and derivatives;,0.0322,0.037,0.0668,0.0292,0.029,0.0012,0.6502,0.0254,0.0366,0.0862,0.006,0.0002
+464,Benzenoids;,Benzenoids;,0.0386,0.6764,0.0078,0.015,0.0582,0.0104,0.0432,0.0324,0.0644,0.0106,0.0202,0.0228
+465,Fatty Acyls;,Fatty Acyls;,0.0094,0.0074,0.0134,0.655,0.1312,0.0218,0.06,0.0234,0.0344,0.0236,0.0028,0.0176
+466,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0146,0.0064,0.7044,0.0134,0.026,0.0448,0.1006,0.0414,0.0224,0.0054,0.002,0.0186
+467,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0488,0.0596,0.0366,0.0066,0.0226,0.0008,0.073,0.0082,0.665,0.023,0.0548,0.001
+468,Organic acids and derivatives;,Organic acids and derivatives;,0.0102,0.0214,0.0122,0.0116,0.0664,0.0116,0.7154,0.0614,0.0558,0.0162,0.0138,0.004
+469,Organic acids and derivatives;,Organic acids and derivatives;,0.004,0.0032,0.0332,0.0108,0.029,0.0102,0.7756,0.056,0.0266,0.0314,0.0118,0.0082
+470,Organic acids and derivatives;,Organic acids and derivatives;,0.0528,0.0642,0.0122,0.0034,0.0166,0.0146,0.7248,0.0192,0.0528,0.0072,0.0296,0.0026
+471,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0216,0.0344,0.0076,0.0144,0.0716,0.0076,0.0494,0.0518,0.0704,0.0126,0.6476,0.011
+472,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0012,0.0072,0.0024,0.0082,0.0258,0.8458,0.069,0.0112,0.0128,0.0028,0.0046,0.009
+473,Organic acids and derivatives;,Organic acids and derivatives;,0.0054,0.0212,0.0162,0.0036,0.0306,0.0122,0.827,0.0282,0.0174,0.0308,0.0062,0.0012
+474,Fatty Acyls;,Fatty Acyls;,0.0104,0.0054,0.0124,0.6756,0.1848,0.0052,0.0394,0.0368,0.0148,0.0112,0.0018,0.0022
+475,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0154,0.0714,0.0092,0.0018,0.0362,0.0392,0.0602,0.015,0.7106,0.0048,0.0248,0.0114
+476,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.008,0.0044,0.0082,0.0294,0.034,0.0052,0.0118,0.0124,0.0158,0.0028,0.0008,0.8672
+477,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.011,0.0678,0.0102,0.0052,0.0556,0.0144,0.046,0.0182,0.7322,0.0072,0.0172,0.015
+478,Phenylpropanoids and polyketides;,Phenylpropanoids and polyketides;,0.0118,0.0952,0.0098,0.0024,0.0314,0.0082,0.0874,0.0268,0.0482,0.0158,0.6518,0.0112
+479,Fatty Acyls;,Fatty Acyls;,0.011,0.0138,0.0108,0.704,0.0204,0.0396,0.0744,0.0258,0.0226,0.0018,0.0058,0.07
+480,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0326,0.0398,0.0136,0.01,0.049,0.0362,0.077,0.0192,0.6872,0.0076,0.019,0.0088
+481,Organic oxygen compounds;,Organic oxygen compounds;,0.0084,0.0114,0.0178,0.0156,0.0552,0.0152,0.0942,0.688,0.046,0.0298,0.008,0.0104
+482,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0038,0.0194,0.0116,0.0186,0.7352,0.0148,0.1244,0.0186,0.017,0.0262,0.0062,0.0042
+483,Organic acids and derivatives;,Organic acids and derivatives;,0.0098,0.0168,0.032,0.0034,0.0132,0.0088,0.799,0.0396,0.0316,0.0288,0.0122,0.0048
+484,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.7118,0.0814,0.0156,0.0082,0.02,0.0164,0.045,0.0176,0.0496,0.0066,0.0206,0.0072
+485,Benzenoids;,Benzenoids;,0.0218,0.6616,0.012,0.0024,0.0236,0.04,0.1642,0.0124,0.0324,0.0058,0.018,0.0058
+486,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.0078,0.026,0.024,0.0056,0.019,0.7322,0.1284,0.0176,0.0236,0.0012,0.0078,0.0068
+487,Organic acids and derivatives;,Organic acids and derivatives;,0.0006,0.0014,0.0464,0.014,0.0772,0.0086,0.7926,0.0234,0.0088,0.0232,0.0008,0.003
+488,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.001,0.0042,0.0088,0.0008,0.7332,0.029,0.1406,0.0218,0.0164,0.0276,0.0136,0.003
+489,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0046,0.006,0.0188,0.0258,0.0458,0.0078,0.0884,0.0442,0.725,0.0274,0.0022,0.004
+490,Carboxylic acids and derivatives;,Carboxylic acids and derivatives;,0.0046,0.0422,0.6504,0.008,0.054,0.0208,0.147,0.02,0.018,0.0002,0.0246,0.0102
+491,Benzenoids;,Benzenoids;,0.0266,0.7156,0.0102,0.0088,0.0638,0.0126,0.0512,0.021,0.0518,0.0152,0.0128,0.0104
+492,Benzenoids;,Benzenoids;,0.0206,0.752,0.0084,0.0004,0.0226,0.0358,0.087,0.014,0.0364,0.0028,0.0126,0.0074
+493,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0188,0.0654,0.0114,0.0064,0.7034,0.013,0.0512,0.0174,0.0782,0.0156,0.0112,0.008
+494,Organic acids and derivatives;,Organic acids and derivatives;,0.0056,0.0706,0.0064,0.0092,0.0376,0.0208,0.7296,0.0546,0.0396,0.0088,0.0076,0.0096
+495,Organic acids and derivatives;,Organic acids and derivatives;,0.0074,0.0122,0.0182,0.0364,0.0742,0.0014,0.6956,0.0454,0.044,0.0602,0.0034,0.0016
+496,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.01,0.0134,0.0118,0.0048,0.056,0.7498,0.0568,0.0264,0.0432,0.0052,0.0122,0.0104
+497,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0064,0.0054,0.0068,0.0328,0.7938,0.0214,0.0542,0.0218,0.0176,0.0248,0.005,0.01
+498,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.008,0.0202,0.0042,0.0056,0.0368,0.8058,0.0654,0.013,0.02,0.0058,0.005,0.0102
+499,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0042,0.0346,0.0158,0.014,0.694,0.004,0.1142,0.036,0.0418,0.027,0.0084,0.006
+500,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0154,0.0152,0.0074,0.0272,0.0372,0.0196,0.0482,0.0254,0.0444,0.0066,0.0108,0.7426
+501,Organic acids and derivatives;,Organic acids and derivatives;,0.0114,0.0074,0.0562,0.0238,0.0484,0.0098,0.7242,0.0342,0.044,0.0322,0.0062,0.0022
+502,Organic acids and derivatives;,Organic acids and derivatives;,0.0124,0.0402,0.017,0.0172,0.046,0.0294,0.6988,0.025,0.046,0.0114,0.013,0.0436
+503,Fatty Acyls;,Fatty Acyls;,0.0214,0.0128,0.0158,0.6724,0.0828,0.0094,0.0698,0.0276,0.05,0.0198,0.0056,0.0126
+504,Benzenoids;,Benzenoids;,0.0586,0.7378,0.0084,0.0038,0.0264,0.011,0.0332,0.0148,0.0516,0.0078,0.0372,0.0094
+505,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0084,0.0078,0.007,0.015,0.0462,0.0102,0.024,0.0216,0.0354,0.0042,0.0012,0.819
+506,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0144,0.021,0.0038,0.0034,0.0684,0.0132,0.0312,0.0156,0.7338,0.0052,0.0248,0.0652
+507,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.003,0.042,0.0092,0.0016,0.0294,0.7474,0.1038,0.0108,0.019,0.005,0.0116,0.0172
+508,Organooxygen compounds;,Organooxygen compounds;,0.0036,0.0108,0.023,0.0072,0.0446,0.0066,0.1606,0.048,0.0172,0.6712,0.0056,0.0016
+509,Organic acids and derivatives;,Organic acids and derivatives;,0.0162,0.014,0.0726,0.0082,0.015,0.057,0.748,0.0196,0.026,0.0072,0.0074,0.0088
+510,Organic acids and derivatives;,Organic acids and derivatives;,0.0106,0.0406,0.0266,0.0012,0.0258,0.0066,0.7934,0.0312,0.022,0.0204,0.0108,0.0108
+511,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0066,0.0108,0.0052,0.0098,0.0376,0.0086,0.0288,0.0198,0.0312,0.004,0.0036,0.834
+512,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0034,0.0178,0.0058,0.0314,0.7108,0.0284,0.0688,0.0126,0.0792,0.0224,0.0034,0.016
+513,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0018,0.0074,0.0076,0.0032,0.0422,0.0544,0.2268,0.009,0.0052,0.0046,0.0068,0.631
+514,Benzenoids;,Benzenoids;,0.0046,0.7352,0.0066,0.0,0.0192,0.013,0.1238,0.032,0.024,0.0144,0.019,0.0082
+515,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0106,0.0054,0.0082,0.0318,0.0492,0.0172,0.027,0.0218,0.0162,0.0036,0.0038,0.8052
+516,Steroids and steroid derivatives;,Steroids and steroid derivatives;,0.0088,0.0102,0.0028,0.0052,0.0362,0.0034,0.0212,0.0234,0.047,0.006,0.0082,0.8276
+517,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0008,0.0024,0.0184,0.0112,0.7306,0.0128,0.0766,0.0648,0.0116,0.0688,0.0,0.002
+518,Benzenoids;,Benzenoids;,0.0366,0.6806,0.0136,0.005,0.0246,0.0128,0.0688,0.0266,0.0676,0.0126,0.0452,0.006
+519,Organic acids and derivatives;,Organic acids and derivatives;,0.012,0.0114,0.051,0.02,0.032,0.0612,0.7024,0.0302,0.0414,0.0038,0.0094,0.0252
+520,Organic acids and derivatives;,Organic acids and derivatives;,0.0018,0.0014,0.0468,0.0048,0.157,0.003,0.7278,0.0294,0.007,0.0188,0.0012,0.001
+521,Organic acids and derivatives;,Organic acids and derivatives;,0.006,0.0184,0.0248,0.0194,0.0718,0.004,0.741,0.045,0.035,0.0276,0.0028,0.0042
+522,Organic acids and derivatives;,Organic acids and derivatives;,0.018,0.021,0.0114,0.0282,0.0466,0.0272,0.682,0.0364,0.0476,0.0084,0.0126,0.0606
+523,Benzenoids;,Benzenoids;,0.093,0.7746,0.008,0.0052,0.016,0.0036,0.0334,0.0086,0.025,0.0138,0.0158,0.003
+524,Organic acids and derivatives;,Organic acids and derivatives;,0.0024,0.0036,0.0722,0.017,0.034,0.0056,0.8142,0.0104,0.023,0.0166,0.0004,0.0006
+525,Fatty Acyls;,Fatty Acyls;,0.0,0.001,0.0204,0.6418,0.2476,0.003,0.0586,0.0128,0.0054,0.0078,0.0,0.0016
+526,Organic acids and derivatives;,Organic acids and derivatives;,0.026,0.0758,0.0116,0.0012,0.023,0.0046,0.6702,0.0276,0.0608,0.0106,0.0696,0.019
+527,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0024,0.06,0.0168,0.0162,0.0262,0.0514,0.1474,0.0148,0.6432,0.0062,0.0076,0.0078
+528,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0102,0.012,0.0204,0.0172,0.7028,0.0432,0.1182,0.024,0.0244,0.0044,0.0064,0.0168
+529,"Nucleosides, nucleotides, and analogues;","Nucleosides, nucleotides, and analogues;",0.007,0.019,0.0796,0.007,0.0144,0.7142,0.093,0.0302,0.0228,0.001,0.0048,0.007
+530,Fatty Acyls;,Fatty Acyls;,0.0014,0.0048,0.005,0.6434,0.0946,0.0544,0.0978,0.0242,0.0456,0.02,0.0012,0.0076
+531,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0078,0.0048,0.0198,0.0408,0.747,0.0172,0.058,0.0246,0.0344,0.0414,0.0032,0.001
+532,Organic acids and derivatives;,Organic acids and derivatives;,0.013,0.006,0.0938,0.0204,0.0294,0.0378,0.7174,0.034,0.017,0.011,0.0028,0.0174
+533,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0002,0.0004,0.0024,0.0244,0.9294,0.0024,0.0194,0.0112,0.0014,0.0046,0.0004,0.0038
+534,Benzenoids;,Benzenoids;,0.0746,0.8018,0.0028,0.0062,0.0276,0.0014,0.0186,0.0058,0.0326,0.0128,0.0138,0.002
+535,Organic oxygen compounds;,Organic oxygen compounds;,0.0048,0.0148,0.0042,0.0122,0.0448,0.0368,0.06,0.7726,0.0254,0.012,0.0054,0.007
+536,Benzene and substituted derivatives;,Benzene and substituted derivatives;,0.652,0.0176,0.0176,0.0174,0.0314,0.0404,0.071,0.0322,0.0304,0.005,0.008,0.077
+537,Organic oxygen compounds;,Organic oxygen compounds;,0.0008,0.0128,0.006,0.0096,0.0784,0.0114,0.0338,0.7766,0.0106,0.0344,0.0182,0.0074
+538,Organic oxygen compounds;,Organic oxygen compounds;,0.007,0.0102,0.0246,0.0194,0.051,0.0314,0.0928,0.6828,0.0384,0.0254,0.0044,0.0126
+539,Organic acids and derivatives;,Organic acids and derivatives;,0.0022,0.0046,0.0368,0.0172,0.066,0.0042,0.828,0.011,0.0074,0.0188,0.002,0.0018
+540,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0078,0.0588,0.0112,0.0024,0.0352,0.048,0.0728,0.009,0.7216,0.0122,0.0142,0.0068
+541,Organic oxygen compounds;,Organic oxygen compounds;,0.0102,0.02,0.0196,0.008,0.068,0.0304,0.0896,0.661,0.0386,0.007,0.0162,0.0314
+542,Organic acids and derivatives;,Organic acids and derivatives;,0.0056,0.007,0.0258,0.018,0.0716,0.0248,0.7266,0.0372,0.0352,0.0432,0.0024,0.0026
+543,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0104,0.0316,0.0162,0.0064,0.6934,0.031,0.0686,0.0232,0.0846,0.0086,0.0144,0.0116
+544,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0078,0.005,0.0164,0.0694,0.074,0.0056,0.0478,0.0434,0.6768,0.0528,0.0006,0.0004
+545,Organic oxygen compounds;,Organic oxygen compounds;,0.0182,0.0654,0.0114,0.0096,0.0278,0.0662,0.0842,0.6488,0.0394,0.0048,0.0142,0.01
+546,Organooxygen compounds;,Organooxygen compounds;,0.0418,0.0546,0.0286,0.0106,0.0288,0.0006,0.0366,0.025,0.0296,0.7042,0.0394,0.0002
+547,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0086,0.0282,0.0066,0.0078,0.681,0.01,0.0402,0.0192,0.0496,0.007,0.0134,0.1284
+548,Lipids and lipid-like molecules;,Lipids and lipid-like molecules;,0.0332,0.0146,0.0098,0.078,0.7058,0.0046,0.0254,0.0714,0.0378,0.0114,0.0054,0.0026
+549,Organoheterocyclic compounds;,Organoheterocyclic compounds;,0.0382,0.0308,0.009,0.0054,0.0232,0.0036,0.0664,0.0266,0.7536,0.013,0.0228,0.0074
+550,Organic acids and derivatives;,Organic acids and derivatives;,0.004,0.1182,0.0072,0.0004,0.0102,0.0234,0.7796,0.0094,0.0238,0.0042,0.015,0.0046
+551,Organic oxygen compounds;,Organic oxygen compounds;,0.0324,0.0326,0.0178,0.0132,0.0256,0.0218,0.0922,0.6592,0.0534,0.0134,0.0172,0.0212

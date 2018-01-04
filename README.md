@@ -2,6 +2,9 @@
 
 Currently there doesn't exist a method to map from Mass Spectrometer data to the chemical class of the substance that generated that data. This would be very useful for diagnosing diseases from, for example, blood samples. For our 6.867 final project we wrote a data pipeline and experimented with a few methods for this reverse mapping. We used data from the HMDB database.
 
+Note: the current `Makefile` is not complete and will likely not run to completion
+and will certainly not reproduce all of the analyses included in our 6.867 report.
+
 
 # Directory Structure
 
